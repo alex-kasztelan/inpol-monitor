@@ -1,0 +1,11 @@
+{
+  "changed": true,
+  "detected_changes": [
+    {
+      "type": "removed_document",
+      "old_value": "CoverLetter.pdf",
+      "new_value": null,
+      "description": "Document removed: CoverLetter.pdf"
+    }
+  ]
+}

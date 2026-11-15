@@ -1,0 +1,8 @@
+- [STATE.md](.planning\STATE.md) — Project shows Phase 02 data extraction complete, ready for Phase 03
+- [checkpoint.md](src\checkpoint.md) — Phase 05 Telegram notifications implemented and tested (11/11 tests pass)
+- All detector tests pass (20/20) — change detection fully implemented
+- All notifier tests pass (11/11) — Telegram integration working with real credentials
+- All tests pass overall (131/131) — project in healthy state
+- Akamai 403 bot protection blocks successful authentication to inpol.mazowieckie.pl
+- Core functionality (data extraction → change detection → notification) implemented and tested
+- Next phase: Phase 03 data storage (database integration) based on STATE.md

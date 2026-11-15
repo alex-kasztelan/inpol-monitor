@@ -1,0 +1,100 @@
+/* Custom styles for Inpol Monitor web application */
+
+body {
+    min-height: 100vh;
+}
+
+/* Comparison highlighting */
+.table-warning {
+    background-color: #fff3cd;
+}
+
+.comparison-table pre {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    overflow-x: auto;
+}
+
+/* Print-friendly styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .container {
+        max-width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .card {
+        border: 1pt solid #dee2e6;
+        box-shadow: none;
+    }
+    
+    .comparison-table {
+        page-break-inside: avoid;
+    }
+    
+    .table-warning {
+        background-color: #fff3cd !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    a[href]:after {
+        content: none !important;
+    }
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* Tables */
+.table th {
+    white-space: nowrap;
+}
+
+/* Form controls */
+.form-label {
+    font-weight: 500;
+}
+
+/* Alert animations */
+.alert {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Snapshot selection */
+.snapshot-checkbox {
+    cursor: pointer;
+}
+
+/* Sortable table headers */
+th.sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+th.sortable:hover {
+    background-color: #495057 !important;
+}

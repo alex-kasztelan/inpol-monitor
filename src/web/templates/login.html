@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t('Web.Login.Title', 'Login') }} - Inpol Monitor{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm mt-5">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Inpol Monitor</h2>
+                <p class="text-center text-muted mb-4">{{ t('Web.Login.Submit', 'Please log in to view snapshots') }}</p>
+                
+                <form method="POST" action="{{ url_for('web.login') }}">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">{{ t('Web.Login.Username', 'Username') }}</label>
+                        <input type="text" class="form-control" id="username" name="username" required autofocus>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">{{ t('Web.Login.Password', 'Password') }}</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">{{ t('Web.Login.Submit', 'Sign In') }}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

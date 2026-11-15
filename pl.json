@@ -1,0 +1,799 @@
+{
+  "Cases": {
+    "Title": "Lista spraw",
+    "New": "Złóż nowy wniosek",
+    "States": {
+      "1": "Nowa",
+      "2": "W toku - nadana sygnatura",
+      "3": "W toku - wezwanie o braki formalne",
+      "4": "W toku",
+      "5": "W toku",
+      "6": "W toku",
+      "7": "W toku - II instancja",
+      "8": "W toku",
+      "9": "W toku",
+      "10": "Decyzja podpisana",
+      "11": "Decyzja podpisana",
+      "12": "Decyzja podpisana",
+      "13": "Dokumenty do odbioru",
+      "14": "Zakończona",
+      "15": "Zakończona",
+      "16": "Zakończona",
+      "17": "Zakończona",
+      "18": "Zakończona",
+      "19": "Zakończona",
+      "20": "Akta sprawy do wypożyczenia",
+      "21": "Zawieszona",
+      "22": "Opiniowanie zakończone"
+    },
+    "MakeApplication": "Złóż wniosek",
+    "Group": {
+      "LegalizationOfStay": "Legalizacja pobytu - Złóż wniosek w MOS",
+      "IssueAndExchangeOfDocuments": "Wydawanie i wymiana dokumentów",
+      "Visas": "Wizy",
+      "Citizenship": "Obywatelstwo",
+      "Other": "Inne"
+    },
+    "Type": "Typ sprawy",
+    "Person": "Osoba",
+    "Status": "Status",
+    "CreationDate": "Data utworzenia",
+    "FileName": "Nazwa pliku",
+    "UploadedBy": "Przesłane przez",
+    "ModificattionDate": "Data modyfikacji",
+    "NoData": "Brak danych",
+    "Signature": "Numer sprawy",
+    "Circumstances": {
+      "ChooseCircumstance": "Wybierz okoliczność",
+      "GoBackBtn": "Wstecz",
+      "EnterCircumstance": "Wpisz okoliczność",
+      "DifferentCircumstance": "Inna okoliczność",
+      "ChooseCircumstanceBtn": "Wybierz"
+    },
+    "FilesRequest": {
+      "Title": "Wniosek o dostęp do akt",
+      "Date": "Data złożenia wniosku",
+      "Status": "Status wniosku",
+      "Statusses": {
+        "2": "Wniosek o dostęp do akt sprawy został wysłany. Wnioski są rozpatrywane w kolejności ich składania. Oczekuj na informację o terminie, w którym będziesz mógł zapoznać się z aktami sprawy.",
+        "5": "Akta sprawy niedostępne",
+        "6": "Akta sprawy gotowe do odbioru"
+      },
+      "SencFilesAccessRequestBtn": "Złóż wniosek o dostęp do akt",
+      "SencFilesAccessRequest": {
+        "Title": "Wniosek o dostęp do akt",
+        "CaseNumber": "Numer sprawy:",
+        "Reason": "Uzasadnienie",
+        "SaveBtn": "Zapisz"
+      }
+    },
+    "SuccessfullyGenerated": "Wniosek został wygenerowany pomyślnie",
+    "SubmitApplicationReminder": "Wygenerowanie wniosku nie jest dowodem jego złożenia. Wydrukuj wniosek i załączniki (jeśli wymagane) i podpisz. Następnie umów wizytę w urzędzie, aby złożyć wniosek.",
+    "AddAttachmentsToCase": "Dodaj załączniki do sprawy",
+    "SelectFileToUpload": "Wybierz plik",
+    "SendFileToUpload": "Wyślij wybrany plik",
+    "FileUploadTitle": "Wyślij plik",
+    "SelectedFileToUpload": "Wybrałeś",
+    "UploadedFiles": "Przesłane:",
+    "DownloadTemplate": "(Pobierz wzór)",
+    "DownloadApplicationFile": "Pobierz wniosek PDF",
+    "MakeAppointmentAtOffice": "Umów wizytę w urzędzie",
+    "DocumentTemplatesAvailable": "Dostępne wzory dokumentów",
+    "ReturnToCasesList": "Zamknij",
+    "BringDocumentPersonally": "Dokument należy przygotować i osobiście dostarczyć do urzędu",
+    "SuccessTitle": "Wniosek został wygenerowany pomyślnie",
+    "BindRelated": "Powiąż sprawę",
+    "DeadlineForDecision": "Termin wydania decyzji",
+    "Reason": "Uzasadnienie",
+    "RelatedCases": "Powiązane sprawy",
+    "BindCase": "Powiąż sprawę",
+    "RelatedComplete": "Powiązane",
+    "RelatedError": "Wystąpił problem podczas powiązania sprawy",
+    "AlreadyRelated": "W systemie istnieje już żądanie powiązania tych spraw",
+    "NotExists": "W systemie nie istnieje sprawa o numerze ",
+    "FileTooLarge": "Plik jest zbyt duży!",
+    "FilesLimitReached": "Osiągnąłeś limit liczby załączników.",
+    "FillApplication": "Wypełnij wniosek",
+    "SubmitApplication": "Złóż wniosek",
+    "GenerateApplicationBtn": "Generuj wniosek",
+    "Errors": {
+      "Label": "Błędy:",
+      "RequiredField": "Pole jest wymagane",
+      "MinimumValue": "Minimalna wartość to ",
+      "MaximumValue": "Maksymalna wartość to ",
+      "WrongFormat": "Wartość ma nieprawidłowy format",
+      "OneOf": "Musisz wybrać jedno",
+      "FewOf": "Musisz wybrać co najmniej jedno",
+      "FileLimit": "Osiągnięto maksymalną liczbę plików",
+      "EmptyIf": "Pole musi być puste"
+    },
+    "TimelineEventTypes": {
+      "Created": "Wypełnianie wniosku",
+      "MeetingScheduled": "Wizyta w urzędzie",
+      "ActivityCreated": "Dodanie czynności",
+      "CorrespondenceSent": "Wysłanie korespondencji",
+      "CorrespondenceReceived": "Odebranie korespondencji",
+      "ProceedingRelationAccepted": "Akceptacja powiązania sprawy",
+      "ProceedingRelationRejected": "Odrzucenie powiązania sprawy",
+      "AppointmentMade": "Wizyta w urzędzie",
+      "ProceedingRelationDeleted": "Usunięcie powiązania sprawy",
+      "ProceedingRelationWithDeleted": "Usunięto powiązanie ze sprawą ",
+      "AddProxyPerson": "Dodaj pełnomocnika",
+      "RemoveProxyPerson": "Usuń pełnomocnika",
+      "UpdateProxyPerson": "Aktualizuj pełnomocnika"
+    },
+    "Timeline": "Oś czasu",
+    "CancelCreatingProceeding": "Anuluj tworzenie postępowania",
+    "ConfirmCancelCreatingProceeding": "Czy na pewno chcesz anulować tworzenie postępowania?",
+    "PayRedirectBtn": "Opłać opłatę skarbową",
+    "NoPaymentLink": "Błąd podczas pobierania linku do płatności",
+    "Question": {
+      "Error": {
+        "Default": "Pole wypełniono nieprawidłowo",
+        "Title": {
+          "Required": "Tytuł jest wymagany"
+        },
+        "Content": {
+          "Required": "Treść jest wymagana",
+          "MaxLength": "Treść może mieć maksymalnie 1500 znaków"
+        }
+      },
+      "Dialog": {
+        "Add": "Dodaj pytanie",
+        "Header": "Zadaj pytanie",
+        "DetailsHeader": "Szczegóły pytania",
+        "Close": "Zamknij",
+        "Send": "Wyślij",
+        "SuccessAlert": "Zakończono pomyślnie",
+        "FailAlert": "Wystąpił błąd, spróbuj ponownie później"
+      },
+      "ProceedingSignature": "Numer postępowania",
+      "Title": "Tytuł",
+      "Content": "Treść",
+      "Titles": {
+        "1": "Brakujące dokumenty",
+        "2": "Pełnomocnictwo",
+        "3": "Wydanie zaświadczenia",
+        "4": "Przeglądanie akt sprawy",
+        "5": "Przyspieszenie wydania decyzji",
+        "6": "Przyspieszenie wydania karty",
+        "7": "Inne"
+      },
+      "ProceedingType": "Typ postępowania",
+      "Questions": "Pytania",
+      "CreatedDate": "Utworzono",
+      "Status": "Status",
+      "Add": "Dodaj pytanie",
+      "Statuses": {
+        "1": "Oczekuje na odpowiedź",
+        "2": "Odpowiedź"
+      },
+      "Response": "Odpowiedź",
+      "QuestionContent": "Treść pytania",
+      "ResponseContent": "Treść odpowiedzi"
+    }
+  },
+  "CaseRelatedDialog": {
+    "ApproveQuestion": "Czy na pewno chcesz powiązać sprawę z sygnaturą "
+  },
+  "ProceedingsState": {
+    "Nowa": "Nowa",
+    "W toku": "W toku",
+    "W toku - nadana sygnatura": "W toku - nadana sygnatura",
+    "W toku - wezwanie o braki formalne": "W toku - wezwanie o braki formalne",
+    "W toku - II instancja": "W toku - II instancja",
+    "Decyzja podpisana": "Decyzja podpisana",
+    "Dokumenty do odbioru": "Dokumenty do odbioru",
+    "Zakończona": "Zakończona",
+    "Zawieszona": "Zawieszona"
+  },
+  "ChangePassword": {
+    "Header": "Zmiana hasła",
+    "OldPassword": "Poprzednie hasło",
+    "NewPassword": "Nowe hasło",
+    "RemindPasswordButton": "Zmień",
+    "SuccessMessage": "Hasło zostało zmienione pomyślnie",
+    "FailureMessage": "Błąd podczas zmiany hasła"
+  },
+  "Common": {
+    "Top": "Góra",
+    "Yes": "Tak",
+    "No": "Nie",
+    "Search": "Szukaj",
+    "Added": "Dodano",
+    "Deleted": "Usunięto",
+    "Choose": "Wybierz",
+    "Password": "Hasło",
+    "PhoneNumber": "Numer telefonu",
+    "PasswordRequired": "Hasło jest wymagane",
+    "InvalidPassword": "Nieprawidłowe hasło",
+    "RepeatPassword": "Powtórz hasło",
+    "RepeatPasswordFail": "Musisz powt��rzyć hasło",
+    "NotSamePasswords": "Hasła nie są identyczne",
+    "FailError": "Wystąpił błąd",
+    "FieldIsRequired": "Pole jest wymagane",
+    "Confirm": "Potwierdź",
+    "Document": {
+      "Name": "Typ dokumentu tożsamości",
+      "TemporaryID": "Tymczasowy dokument tożsamości",
+      "Passport": "Paszport",
+      "ResidenceCard": "Karta pobytu"
+    },
+    "Address": {
+      "Province": "Województwo",
+      "County": "Powiat",
+      "Commune": "Gmina",
+      "City": "Miejscowość",
+      "ZipCode": "Kod pocztowy",
+      "Street": "Ulica",
+      "StreetNumber": "Numer domu",
+      "ApartmentNumber": "Numer mieszkania"
+    },
+    "Email": "Adres e-mail",
+    "EPUAPBoxAddress": "Adres skrytki ePUAP",
+    "PersonalSection": {
+      "Header": "Dane osobowe",
+      "Surname": "Nazwisko",
+      "Name": "Imię",
+      "SecondName": "Drugie imię",
+      "SeriesAndNumber": "Seria i numer dokumentu tożsamości",
+      "IDCountryInfo": "Kraj wydania dokumentu tożsamości",
+      "BirthDate": "Data urodzenia",
+      "Citizenship": "Obywatelstwo",
+      "SaveSuccess": "Zmiana danych zapisana"
+    },
+    "ContactData": {
+      "Header": "Dane kontaktowe",
+      "PolishAddressSectionHeader": "Adres pobytu w Polsce",
+      "CorrespondenceSectionHeader": "Adres do korespondencji",
+      "SameAddress": "Tak jak adres pobytu",
+      "CopyAddress": "Kopiuj adres pobytu"
+    },
+    "ProxyData": {
+      "Header": "Dane pełnomocnika",
+      "HaveProxy": "Mam pełnomocnika",
+      "Name": "Imię",
+      "Surname": "Nazwisko"
+    },
+    "PasswordStrength": {
+      "LowerCaseCriteriaMsg": "Zawiera co najmniej jedną małą literę",
+      "UpperCaseCriteriaMsg": "Zawiera co najmniej jedną wielką literę",
+      "DigitsCriteriaMsg": "Zawiera co najmniej jedną cyfrę",
+      "SpecialCharsCriteriaMsg": "Zawiera co najmniej jeden znak specjalny",
+      "MinCharsCriteriaMsg": "Zawiera co najmniej 8 znaków"
+    },
+    "SaveButton": "Zapisz",
+    "Close": "Zamknij",
+    "UnknownError": "Nieznany błąd",
+    "Validators": {
+      "FieldRequired": "Pole jest wymagane!",
+      "FieldTooShort": "Opis jest zbyt krótki!",
+      "FieldTooLong": "Opis jest zbyt długi!",
+      "FieldInvalid": "Opis musi być w języku polskim!"
+    },
+    "Cancel": "Anuluj",
+    "Verify": "Weryfikuj",
+    "twoFAMethod": "Sposób odbioru certyfikatu",
+    "InvalidCaptcha": "System wykrył podejrzane zachowanie. Spróbuj ponownie"
+  },
+  "Table": {
+    "Type": "Typ sprawy",
+    "Person": "Osoba",
+    "Status": "Status",
+    "CreationDate": "Data utworzenia",
+    "FileName": "Nazwa pliku",
+    "UploadedBy": "Przesłane przez",
+    "ModificattionDate": "Data modyfikacji",
+    "NoData": "Brak danych",
+    "Signature": "Numer sprawy",
+    "EndDate": "Data zakończenia",
+    "StartDate": "Data rozpoczęcia",
+    "FilterBtn": "Filtruj",
+    "NoFilters": "Brak filtrów",
+    "Filters": "Filtry",
+    "Dates": {
+      "From": "Od: ",
+      "To": "Do: ",
+      "Exact": "Data: "
+    }
+  },
+  "SideMenu": {
+    "Home": "Strona główna",
+    "Cases": "Sprawy",
+    "Files": "Pliki",
+    "Help": "Pomoc",
+    "AriaLabel": "Menu boczne"
+  },
+  "Register": {
+    "Header": "Rejestracja",
+    "LoginSection": {
+      "Header": "Dane logowania"
+    },
+    "RegisterButton": "Zarejestruj się",
+    "SuccessMessage": "Konto zostało utworzone pomyślnie. Link aktywacyjny został wysłany na podany adres e-mail.",
+    "EmailAlreadyInUseError": "Konto dla podanego adresu e-mail już istnieje.",
+    "RegistrationError": "Rejestracja nie powiodła się. Sprawdź swoje dane.",
+    "ConfirmCancelMessage": "Czy na pewno chcesz anulować rejestrację?",
+    "Terms": {
+      "Formula": {
+        "IAccept": "Akceptuję ",
+        "Terms": "regulamin. "
+      },
+      "Contents": {
+        "FullTitle": "REGULAMIN PORTALU \"IN POL\"",
+        "Paragraphs": {
+          "1": {
+            "Header": "DEFINICJE",
+            "Admin": "<strong>Administrator -</strong> Mazowiecki Wojewoda wykonujący swoje zadania przy pomocy Mazowieckiego Urzędu Wojewódzkiego w Warszawie.",
+            "Portal": "<strong>Portal -</strong> oznacza Portal Cudzoziemca \"IN POL\"",
+            "Account": "<strong>Konto -</strong> prowadzone dla Użytkownika przez Administratora pod unikatową nazwą (loginem), będące zbiorem zasobów, w którym gromadzone są dane Użytkownika oraz informacje o jego działaniach w ramach Portalu \"IN POL\" i które Użytkownik samodzielnie zarządza.",
+            "Login": "<strong>Login -</strong> nazwa Użytkownika wybrana podczas rejestracji w Portalu, która posłuży do korzystania z Konta. Login nie może zawierać treści wulgarnych, obraźliwych lub niezgodnych z prawem oraz nie może być identyczny z loginem innego Użytkownika lub naruszać innych zasad określonych w Regulaminie.",
+            "Services": "<strong>Usługi -</strong> usługi świadczone przez Administratora na rzecz Użytkownika zgodnie z postanowieniami Regulaminu.",
+            "User": "<strong>Użytkownik -</strong> każda osoba fizyczna posiadająca pełną zdolność do czynności prawnych, która utworzyła Konto i zaakceptowała postanowienia Regulaminu oraz podała swoje dane w procesie rejestracji.",
+            "Blockade": "<strong>Blokada -</strong> blokada, stała lub czasowa, według uznania Administratora lub osoby przez niego wyznaczonej, dostępu Użytkownika, który naruszył postanowienia Regulaminu lub prawo, do Portalu, Konta lub poszczególnych elementów Portalu; w sytuacjach wskazanych w Regulaminie przewiduje się również czasowe lub stałe usunięcie Konta Użytkownika."
+          },
+          "2": {
+            "Header": "POSTANOWIENIA WSTĘPNE",
+            "Point1": "Regulamin określa zasady funkcjonowania i korzystania z Portalu udostępnianego przez Administratora na rzecz Użytkowników.",
+            "Point2": "Usługi świadczone są na zasadach określonych w Regulaminie oraz powszechnie obowiązujących przepisach prawa, a naruszenie przez Użytkownika postanowień Regulaminu powoduje konsekwencje wynikające bezpośrednio z treści Regulaminu oraz wskazanych przepisów prawa.",
+            "Point3": "Treść Regulaminu udostępniana jest Użytkownikowi nieodpłatnie przed rejestracją. Brak akceptacji Regulaminu uniemożliwia korzystanie z Portalu."
+          },
+          "3": {
+            "Header": "OGÓLNE ZASADY KORZYSTANIA Z PORTALU",
+            "Point1": {
+              "PointText": "Użytkownik może:",
+              "Subpoint1": "Modyfikować dane Użytkownika w Profilu korzystając z opcji dostępnych w Portalu.",
+              "Subpoint2": "Korzystać z Witryny i jej funkcjonalności zgodnie z jej przeznaczeniem i postanowieniami Regulaminu."
+            },
+            "Point2": {
+              "PointText": "Użytkownik jest zobowiązany w szczególności do:",
+              "Subpoint1": "Powstrzymywania się od jakichkolwiek działań, które mogą utrudniać lub zakłócać funkcjonowanie Portalu oraz od korzystania z Portalu i jego funkcjonalności w sposób zakłócający innym Użytkownikom lub Administratorowi.",
+              "Subpoint2": "Powstrzymywania się od działań naruszających prywatność użytkowników Portalu, w szczególności od gromadzenia, przetwarzania i rozpowszechniania informacji o nich bez ich wyraźnej zgody, o ile nie jest to dozwolone przez prawo i postanowienia Regulaminu."
+            },
+            "Point3": {
+              "PointText": "Nie wolno używać Portalu i jego funkcjonalności do celów innych niż wynikające z charakteru i celu Portalu oraz Regulaminu, w tym do celów innych niż korzystanie z Usług. W szczególności nie wolno:",
+              "Subpoint1": "Rozsyłać spamu.",
+              "Subpoint2": "Podejmować działań mogących wyrządzić szkodę, w szczególności Administratorowi, innym Użytkownikom lub osobom trzecim.",
+              "Subpoint3": "Umieszczać na Portalu fałszywych danych lub wprowadzających w błąd informacji.",
+              "Subpoint4": "Podawać się za innych Użytkowników, tworzyć fałszywej tożsamości Użytkownika.",
+              "Subpoint5": "Logować się do Portalu przy użyciu danych logowania innego Użytkownika bez jego wiedzy lub zgody."
+            },
+            "Point4": "Użytkownik ponosi pełną odpowiedzialność za korzystanie z Konta na Portalu w sposób sprzeczny z Regulaminem lub powszechnie obowiązującym prawem oraz za konsekwencje takiego działania.",
+            "Point5": "Za nieprzestrzeganie postanowień Regulaminu lub powszechnie obowiązujących przepisów prawa przez Użytkownika, może zostać nałożona na Użytkownika Blokada, której nałożenie należy do decyzji Administratora.",
+            "Point6": "Jeżeli w odniesieniu do części funkcjonalności Portalu Blockada nie skutkuje ustaniem naruszenia postanowień Regulaminu lub powszechnie obowiązujących przepisów prawa, dostęp do Portalu może zostać zablokowany trwale."
+          },
+          "4": {
+            "Header": "WYMAGANIA TECHNICZNE",
+            "Point1": {
+              "PointText": "Wymagania techniczne niezbędne do korzystania z Portalu są następujące:",
+              "Subpoint1": "Posiadanie urządzenia umożliwiającego dostęp do Internetu, wyposażonego w sprawny system operacyjny, np. Linux lub Windows.",
+              "Subpoint2": "Zainstalowanie na urządzeniu, o którym mowa powyżej, najnowszej, aktualnej wersji przeglądarki internetowej zapewniającej dostęp do zasobów Internetu i akceptującej pliki cookies, tj. Internet Explorer, Microsoft Edge, Mozilla Firefox, Safari, Google Chrome lub innej kompatybilnej przeglądarki."
+            },
+            "Point2": "Administrator nie ponosi odpowiedzialności za niewłaściwe funkcjonowanie Portalu na urządzeniu niespełniającym wymagań technicznych."
+          },
+          "5": {
+            "Point1": "Poprzez zakończenie procedury rejestracji w Portalu, której efektem jest utworzenie Konta, Użytkownik zapewnia i oświadcza, że zapoznał się z treścią całego Regulaminu i akceptuje ją oraz zobowiązuje się do jego przestrzegania."
+          },
+          "6": {
+            "Header": "KONTO UŻYTKOWNIKA",
+            "Point1": {
+              "Subpoint1": "Posiadanie Konta w Portalu, jak również przeglądanie i zmiana danych jest dla Użytkownika nieodpłatne.",
+              "Subpoint2": "Administrator zakłada, że informacje i oświadczenia wysłane z adresu e-mail podanego przez Użytkownika pochodzą od Użytkownika, a czynności wykonane przez osobę zalogowaną do Portalu przy użyciu loginu i hasła Użytkownika zostały wykonane przez Użytkownika, chyba że Użytkownik przedstawi dowód przeciwny.",
+              "Subpoint3": "Wszelkie informacje umieszczane w Portalu muszą być prawdziwe, dokładne i nie wprowadzające w błąd.",
+              "Subpoint4": "Informacje muszą być aktualizowane w przypadku istotnych zmian lub w miarę potrzeby."
+            }
+          },
+          "7": {
+            "Header": "ZASADY BEZPIECZEŃSTWA",
+            "Point1": "Użytkownik odpowiada za ochronę parametrów Konta przed osobami trzecimi.",
+            "Point2": "Użytkownik odpowiada za nieprawidłowe korzystanie z Konta na Portalu, w szczególności w przypadku udostępnienia osobom trzecim loginu, hasła lub klucza.",
+            "Point3": {
+              "PointText": "Użytkownik zobowiązany jest do niezwłocznego poinformowania Administratora o stwierdzeniu przypadku:",
+              "Subpoint1": "niewłaściwego lub niezwykłego funkcjonowania Portalu;",
+              "Subpoint2": "utraty loginu i hasła;",
+              "Subpoint3": "niewłaściwego lub niezwykłego działania innych Użytkowników lub osób trzecich w odniesieniu do Portalu lub zawartych w nim danych;",
+              "Subpoint4": "nieautoryzowanego korzystania z Portalu;",
+              "Subpoint5": "wykorzystywania danych zawartych w Portalu przez osoby nieuprawnione lub w celach innych niż określone w Regulaminie;",
+              "Subpoint6": "konieczności wyłączenia dostępu do Portalu."
+            },
+            "Point4": "Zabrania się umieszczania treści niezgodnych z obowiązującym prawem.",
+            "Point5": "Administrator nie ponosi odpowiedzialności za modyfikację, utratę, jak również za ujawnienie danych wprowadzonych przez Użytkownika do Portalu z przyczyn leżących po stronie Użytkownika, w szczególności na skutek utraty lub niewłaściwego zabezpieczenia loginu lub hasła."
+          },
+          "8": {
+            "Header": "POSTANOWIENIA KOŃCOWE",
+            "Point1": "Administrator zastrzega sobie prawo do zmiany postanowień Regulaminu.",
+            "Point2": "Administrator dołoży wszelkich starań, aby Portal i wszystkie udostępniane za jego pomocą Usługi funkcjonowały w sposób ciągły i bezprzerwany, jednakże Administrator nie ponosi odpowiedzialności za zakłócenia spowodowane siłą wyższą, awariami lub nieupoważnioną interferencją Użytkowników lub osób trzecich, niewystarczającą przepustowością łącza, za pomocą którego Użytkownik korzysta z Portalu, naruszeniem Regulaminu przez Użytkownika.",
+            "Point3": "Administrator zastrzega sobie prawo do czasowego, całkowitego lub częściowego wyłączenia Portalu w celu jego ulepszenia, dodania usług lub przeprowadzenia konserwacji, bez wcześniejszego powiadamiania Użytkowników.",
+            "Point4": "Administrator zastrzega sobie możliwość wdrożenia w Portalu, na wszystkich jego poziomach, funkcjonalnych, identyfikacyjnych lub innych rozwiązań, które okażą się odpowiednie do przedmiotu lub warunków technicznych Portalu, w odniesieniu do możliwości wystąpienia niepożądanych zachowań lub zdarzeń lub zagrożeń dla praw lub interesów Użytkowników lub Administratora lub uzasadnionych interesów osób trzecich.",
+            "Point5": "Uwagi dotyczące funkcjonowania Portalu należy przesyłać na adres e-mail: wsc@mazowieckie.pl"
+          }
+        }
+      },
+      "Title": "Regulamin",
+      "CloseBtn": "Zamknij"
+    },
+    "PrivacyPolicy": {
+      "Formula": {
+        "IAccept": "Akceptuję ",
+        "PrivacyPolicy": "politykę prywatności. "
+      },
+      "Contents": {
+        "1": "Administratorem Platformy jest <b>Mazowiecki Wojewoda</b>.",
+        "2": "Administrator Platformy przykłada szczególną wagę do poszanowania prywatności użytkowników korzystających z usługi.",
+        "3": "Dane osobowe to informacje pozwalające zidentyfikować osobę fizyczną lub podmiot. Przetwarzanie danych to każda operacja dotycząca ich użycia, taka jak zbieranie, konsultowanie, rejestrowanie, organizowanie, przechowywanie, modyfikowanie, udostępnianie lub usuwanie.",
+        "4": "Administrator Platformy przetwarza dane osobowe w celach realizacji zadań publicznych. W zależności od zadania mogą istnieć różne podstawy prawne przetwarzania, zbierania i używania danych osobowych.",
+        "5": "Osoby odwiedzające Platformę <b>inpol.mazowieckie.pl </b> mają kontrolę nad podanymi danymi osobowymi. Portal zbiera dane w minimalnym zakresie niezbędnym tylko do obsługi sprawy.",
+        "6": "W celu korzystania z Platformy <b>IN POL</b> możemy używać plików cookies, które są małymi plikami przechowywanymi na urządzeniu służącym do przeglądania strony. Pozwalają nam spersonalizować sesję na stronie i przechowywać m.in. informacje takie jak adres IP, dane sesji użytkownika, zapisane preferencje i ustawienia, datę ostatniej wizyty.",
+        "7": "Platforma <b>IN POL</b> używa również plików cookies do zbierania statystyk i zachowań użytkowników na poszczególnych podstronach, monitorowania ruchu na poszczególnych usługach, integracji z aplikacjami osób trzecich, takimi jak: Profil Zaufany, ePUAP, KIR, moduł wirtualnego asystenta i czatu. W związku z powyższym witryna może używać plików cookies zewnętrznych dostawców wymienionych powyżej.",
+        "8": "Użytkownik może w dowolnym momencie przeglądać, blokować lub zezwalać na używanie plików cookies, jednakże ich brak może spowodować nieprawidłowe działanie strony lub ograniczyć możliwość korzystania z niektórych oferowanych funkcji.",
+        "9": "W celach statystycznych, diagnozy problemów, analizy naruszeń i incydentów oraz zgodnie z aktualnymi przepisami prawa, Platforma IN POL zbiera i przetwarza adresy IP użytkowników odwiedzających witrynę oraz inne dane wysyłane przez przeglądarkę gościa. Na podstawie tych danych możliwe jest określenie typu urządzenia, rozdzielczości, modelu przeglądarki lub przybliżonych informacji o regionie, z którego nawiązano połączenie. Dane te nie są ujawniane osobom trzecim, z wyjątkiem organów ścigania w przypadku prowadzonych postępowań i wykroczeń.",
+        "10": "Dane osobowe podawane w formularzach traktowane są jako poufne i nie są widoczne dla osób nieuprawnionych.",
+        "11": "Zebrane dane mogą być przetwarzane w sposób zautomatyzowany, ale nie podlegają profilowaniu. Przetwarzane dane są zbierane na podstawie wyrażonej przez użytkownika końcowego zgody akceptującej tę politykę prywatności.",
+        "12": "Przetwarzanie danych osobowych odbywa się na podstawie wyrażonej zgody oraz obowiązków wynikających z aktualnych przepisów prawa.",
+        "13": "Dane osobowe za pomocą Platformy <b>inpol.mazowieckie.pl</b> mogą być przekazywane do właściwego urzędu w związku z realizacją usług dostępnych na Platformie.",
+        "14": "Dane osobowe nie są przekazywane do krajów trzecich ani organizacji międzynarodowych.",
+        "15": "Każdy podmiot danych ma prawo dostępu, sprostowania, usunięcia lub ograniczenia przetwarzania, prawo do sprzeciwu, prawo do wniesienia skargi do organu nadzorczego.",
+        "16": "Kontakt z osobą nadzorującą przetwarzanie danych osobowych jest możliwy za pośrednictwem e-mail: iod@mazowieckie.pl",
+        "17": "Dane osobowe mogą być udostępniane podmiotom upoważnionym na podstawie obowiązującego prawa (np. organy ścigania).",
+        "18": "Usunięcie danych osobowych może nastąpić poprzez cofnięcie zgody lub wniesienie prawnie dopuszczalnego sprzeciwu wobec przetwarzania danych osobowych.",
+        "19": "Każdy ma prawo wnieść skargę do organu nadzorczego Prezesa Urzędu Ochrony Danych Osobowych zajmującego się ochroną danych osobowych, jeśli uważa, że jego dane osobowe są przetwarzane z naruszeniem prawa.",
+        "Note": "Polityka ta będzie aktualizowana w miarę potrzeb i w miarę występowania zmian.",
+        "LastUpdated": "Ostatnia aktualizacja 2021-07-20"
+      },
+      "Title": "Polityka prywatności",
+      "SubTitle": "Polityka prywatności i plików cookies",
+      "CloseBtn": "Zamknij"
+    }
+  },
+  "Profile": {
+    "Header": "Profil",
+    "EditButton": "Edytuj",
+    "History": {
+      "Title": "Historia zmian danych konta",
+      "FieldName": "Nazwa pola",
+      "OldValue": "Stara wartość",
+      "NewValue": "Nowa wartość",
+      "ChangeDate": "Data zmiany"
+    }
+  },
+  "TopMainMenu": {
+    "Register": "Zarejestruj się",
+    "Login": "Zaloguj się",
+    "Profile": "Profil",
+    "ChangePassword": "Zmień hasło",
+    "AccountHistory": "Historia zmian danych konta",
+    "Logout": "Wyloguj się",
+    "ProfileAriaLabel": "Opcje profilu",
+    "LanguageAriaLabel": "Wybór języka",
+    "RegisterAriaLabel": "Rejestracja i logowanie"
+  },
+  "Login": {
+    "Login": "Logowanie",
+    "Email": "E-mail",
+    "SignIn": "Zaloguj się",
+    "CreateAcc": "Utwórz konto",
+    "FailError": "Logowanie nie powiodło się",
+    "InvalidCredentials": "Nieprawidłowy adres e-mail lub hasło",
+    "LoginRequired": "Login jest wymagany",
+    "EmailRequired": "E-mail jest wymagany",
+    "ForgotPassword": "Nie pamiętam hasła",
+    "CodeSMS": "Kod wysłany wiadomością tekstową",
+    "CodeEmail": "Kod wysłany e-mailem",
+    "InsertCode": "Wprowadź kod",
+    "CodeRequired": "Kod jest wymagany",
+    "InvalidCode": "Nieprawidłowy kod uwierzytelniający",
+    "ExpiredCode": "Kod uwierzytelniający stracił ważność",
+    "TwoFAOtherError": "Logowanie nie powiodło się. Spróbuj ponownie."
+  },
+  "Files": {
+    "Types": {
+      "1": "PDF",
+      "2": "PNG",
+      "3": "JPG",
+      "4": "DOCX",
+      "5": "Inne"
+    },
+    "File": "Plik",
+    "Signature": "Sygnatura",
+    "Type": "Typ pliku",
+    "UploadedBy": "Przesłane przez",
+    "CreateDate": "Data utworzenia",
+    "EditDate": "Data modyfikacji",
+    "NotExists": "Plik nie istnieje",
+    "List": "Lista plików"
+  },
+  "ResetPassword": {
+    "Header": "Resetowanie hasła",
+    "Email": "E-mail",
+    "ResetPasswordButton": "Zresetuj hasło",
+    "EmailRequired": "E-mail jest wymagany"
+  },
+  "ForgotPassword": {
+    "EmailSended": "E-mail z linkiem do zresetowania hasła został wysłany na podany adres e-mail.",
+    "ResetWarrning": "Z podanym adresem e-mail nie jest powiążadne konto.",
+    "ResetError": "Wystąpił nieznany błąd, skontaktuj się z administratorem."
+  },
+  "EmailConfirmed": {
+    "Accepted": "E-mail został potwierdzony, zostaniesz przekierowany do strony logowania. Jeśli nie nastąpi to automatycznie, kliknij",
+    "Link": "link."
+  },
+  "RelatedProceedingStatusType": {
+    "1": "Oczekuje na akceptację",
+    "2": "Zaakceptowane",
+    "3": "Odrzucone"
+  },
+  "RelatedReason": {
+    "1": "Rodzina",
+    "2": "Dziecko",
+    "3": "Rodzic",
+    "4": "Małżonek"
+  },
+  "AccountFieldnames": {
+    "Firstname": "Imię",
+    "FirstName": "Imię",
+    "SecondName": "Drugie imię",
+    "Surname": "Nazwisko",
+    "PhoneNumber": "Numer telefonu",
+    "Email": "Adres e-mail",
+    "IdentityDocument": {
+      "IdentityDocumentType.Id": "Typ dokumentu",
+      "TypeId": "Typ dokumentu",
+      "DocumentNumber": "Numer dokumentu",
+      "IssuanceCountryId": "Kraj wydania dokumentu",
+      "IssuanceCountry.Id": "Kraj wydania dokumentu"
+    },
+    "ContactDetails": {
+      "ResidenceAddress": {
+        "Province": "Adres pobytu - Województwo",
+        "County": "Adres pobytu - Powiat",
+        "Community": "Adres pobytu - Gmina",
+        "Locality": "Adres pobytu - Miejscowość",
+        "ZipCode": "Adres pobytu - Kod pocztowy",
+        "Street": "Adres pobytu - Ulica",
+        "HouseNumber": "Adres pobytu - Numer domu",
+        "ApartmentNumber": "Adres pobytu - Numer mieszkania"
+      },
+      "PostalAddress": {
+        "Province": "Adres do korespondencji - Województwo",
+        "County": "Adres do korespondencji - Powiat",
+        "Community": "Adres do korespondencji - Gmina",
+        "Locality": "Adres do korespondencji - Miejscowość",
+        "ZipCode": "Adres do korespondencji - Kod pocztowy",
+        "Street": "Adres do korespondencji - Ulica",
+        "HouseNumber": "Adres do korespondencji - Numer domu",
+        "ApartmentNumber": "Adres do korespondencji - Numer mieszkania"
+      }
+    },
+    "DateOfBirth": "Data urodzenia",
+    "ProxyPersonField": "Pełnomocnik",
+    "ProxyPerson": {
+      "Name": "Pełnomocnik - Imię",
+      "Surname": "Pełnomocnik - Nazwisko",
+      "PhoneNumber": "Pełnomocnik - Numer telefonu",
+      "EPuapAddress": "Pełnomocnik - Adres ePUAP",
+      "PostalAddress": {
+        "Province": "Pełnomocnik - Adres do korespondencji - Województwo",
+        "County": "Pełnomocnik - Adres do korespondencji - Powiat",
+        "Community": "Pełnomocnik - Adres do korespondencji - Gmina",
+        "Locality": "Pełnomocnik - Adres do korespondencji - Miejscowość",
+        "ZipCode": "Pełnomocnik - Adres do korespondencji - Kod pocztowy",
+        "Street": "Pełnomocnik - Adres do korespondencji - Ulica",
+        "HouseNumber": "Pełnomocnik - Adres do korespondencji - Numer domu",
+        "ApartmentNumber": "Pełnomocnik - Adres do korespondencji - Numer mieszkania"
+      }
+    },
+    "Citizenship.Id": "Obywatelstwo",
+    "HasProxy": "Posiada pełnomocnika"
+  },
+  "Reservations": {
+    "AlreadyTaken": "Wybrana data nie jest dostępna",
+    "ChooseQueue": "Proszę wybrać kolejkę",
+    "ChooseLocation": "Proszę wybrać lokalizację",
+    "MakeAppointment": "Umów wizytę w urzędzie",
+    "Name": "Imię",
+    "LastName": "Nazwisko",
+    "DateOfBirth": "Data urodzenia",
+    "TicketValue": "Numer biletu",
+    "StartDate": "Data i godzina rozpoczęcia",
+    "Appointment": "Wizyta",
+    "NotPossible": "Wydrukuj wniosek, podpisz i złóż osobiście w urzędzie przy ul. Marszałkowskiej 3/5 w Warszawie.",
+    "TypeI": "Wydrukuj wniosek, podpisz i złóż osobiście w urzędzie przy ul. Marszałkowskiej 3/5 w Warszawie (weź bilet z literą 'I')",
+    "TypeW": "Wydrukuj wniosek, podpisz i złóż osobiście w urzędzie przy ul. Marszałkowskiej 3/5 w Warszawie (weź bilet z literą 'W')",
+    "TypeX": "Wypełnij wniosek w MOS - Moduł Spraw dostępny pod adresem https://www.mos.cudzoziemcy.gov.pl",
+    "TypeF": "Wypełnij wniosek w MOS - Moduł Spraw dostępny pod adresem https://www.mos.cudzoziemcy.gov.pl",
+    "TypeG": "Wypełnij wniosek w MOS - Moduł Spraw dostępny pod adresem https://www.mos.cudzoziemcy.gov.pl",
+    "TypeS": "Wypełnij wniosek w MOS - Moduł Spraw dostępny pod adresem https://www.mos.cudzoziemcy.gov.pl",
+    "ConfirmDialog": {
+      "Title": "Potwierdzenie",
+      "Message": "Czy potwierdzasz termin wizyty?",
+      "CancelBtn": "Nie",
+      "ConfirmBtn": "Tak"
+    }
+  },
+  "Dashboard": {
+    "ActiveCases": {
+      "Title": "Moje aktywne sprawy",
+      "Signature": "Numer sprawy",
+      "Type": "Typ sprawy",
+      "Status": "Status",
+      "DecisionDate": "Data decyzji",
+      "SubmitDate": "Data złożenia",
+      "ForeignerFullName": "Osoba"
+    },
+    "RelatedCases": {
+      "Title": "Powiązane aktywne sprawy",
+      "Signature": "Numer sprawy",
+      "Person": "Osoba",
+      "Status": "Status",
+      "DecisionDate": "Termin wydania decyzji",
+      "RelatedSignature": "Powiązana ze sprawą"
+    },
+    "FutureAppointments": {
+      "Title": "Zaplanowane wizyty w urzędzie",
+      "StartDate": "Data",
+      "Signature": "Numer sprawy",
+      "QueueName": "Nazwa kolejki",
+      "TicketValue": "Numer biletu",
+      "OfficialAppointmentName": "Nazwisko",
+      "OfficialAppointmentPlace": "Miejsce"
+    }
+  },
+  "Help": {
+    "Title": "Strony informacyjne",
+    "NoData": "Brak danych",
+    "Files": "Pliki"
+  },
+  "CaseDetails": {
+    "Title": "Postępowanie",
+    "DecisionDate": "Data decyzji",
+    "CreateDate": "Utworzono",
+    "GeneralInfo": "Informacje ogólne",
+    "CaseNumber": "Numer sprawy",
+    "Description": "Opis",
+    "Circumstance": "Okoliczność",
+    "LastUpdated": "Zaktualizowano",
+    "DocumentNumber": "Numer dokumentu",
+    "DocumentType": "Typ dokumentu",
+    "RelatedDocuments": {
+      "Title": "Powiązane dokumenty",
+      "FileName": "Nazwa",
+      "CreateDate": "Utworzono"
+    }
+  },
+  "AssignmentCode": {
+    "Button": "Dodaj zarejestrowaną sprawę",
+    "Assign": "Przypisz",
+    "Code": "Kod przypisania",
+    "Title": "Przypisz sprawę",
+    "Error": "Błąd przypisania kodu",
+    "Success": "Sprawa została przypisana pomyślnie"
+  },
+  "Pagination": {
+    "FirstPage": "Pierwsza strona",
+    "ItemsPerPage": "Elementów na stronę",
+    "LastPage": "Ostatnia strona",
+    "NextPage": "Następna strona",
+    "PreviousPage": "Poprzednia strona",
+    "Of": "z"
+  },
+  "Cookie": {
+    "Message": "W celu świadczenia usług na najwyższym poziomie używamy plików cookies. Korzystanie z naszej witryny oznacza, że będą one przechowywane na Twoim urządzeniu. Możesz zmienić ustawienia przeglądarki w dowolnym momencie.",
+    "Dismiss": "Rozumiem!",
+    "Link": "Dowiedz się więcej"
+  },
+  "CaseProxyInfo": {
+    "Proxies": "Pełnomocnicy",
+    "FullName": "Imię i nazwisko",
+    "Address": "Adres",
+    "Action": "Akcja",
+    "NoData": "Brak pełnomocników",
+    "Add": "Dodaj",
+    "ConfirmDialog": {
+      "Title": "Potwierdzenie",
+      "Message": "Czy na pewno chcesz usunąć pełnomocnika?",
+      "CancelBtn": "Nie",
+      "ConfirmBtn": "Tak"
+    }
+  },
+  "ProxyPersonDialog": {
+    "Header": "Pełnomocnik",
+    "Name": "Imię",
+    "Surname": "Nazwisko",
+    "PhoneNumber": "Numer telefonu",
+    "EpuapAddress": "Adres ePUAP"
+  },
+  "CaptchaDialog": {
+    "Header": "Weryfikacja Captcha"
+  },
+  "2FA": {
+    "InvalidPhoneNumber": "Uzupełnij numer telefonu podczas edycji profilu użytkownika lub sprawdź, czy jest poprawny.",
+    "Sending2FACode": "Wysyłanie kodu..."
+  },
+  "Notification": {
+    "Subject": {
+      "Changes": "Zmiany w sprawie",
+      "Error": "Wystąpił błąd"
+    },
+    "Body": {
+      "Summary": "Podsumowanie",
+      "ChangesDetected": "zmian",
+      "CaseDetails": "Szczegóły sprawy",
+      "CaseId": "Numer sprawy",
+      "CaseType": "Typ",
+      "Person": "Osoba",
+      "NoChanges": "(brak zmian)",
+      "Error": "Błąd",
+      "Time": "Czas",
+      "Status": "Status",
+      "NewDocument": "Nowy dokument",
+      "DateChange": "Zmiana daty",
+      "SentBy": "Wysłane przez Inpol Monitor",
+      "Accounts": "Konta"
+    },
+    "Error": {
+      "CheckFailed": "Sprawdzanie nie powiodło się",
+      "ErrorType": "Typ błędu",
+      "Message": "Komunikat"
+    }
+  },
+  "Web": {
+    "Nav": {
+      "Snapshots": "Zdjęcia",
+      "Logout": "Wyloguj",
+      "LoggedOut": "Zostałeś wylogowany.",
+      "LoggedIn": "Witaj, {username}!",
+      "LanguageChanged": "Zmieniono język na Polski",
+      "Login": "Zaloguj"
+    },
+    "Login": {
+      "Title": "Logowanie",
+      "Username": "Nazwa użytkownika",
+      "Password": "Hasło",
+      "Submit": "Zaloguj się",
+      "InvalidCredentials": "Nieprawidłowa nazwa użytkownika lub hasło.",
+      "PleaseEnter": "Wprowadź nazwę użytkownika i hasło."
+    },
+"Index": {
+      "Title": "Zdjęcia sprawy",
+      "Filter": "Filtruj zdjęcia",
+      "ApplyFilters": "Zastosuj filtry",
+      "NoFilters": "Wyczyść filtry",
+      "Compare": "Porównaj wybrane",
+      "Delete": "Usuń wybrane",
+      "DeleteConfirm": "Czy na pewno chcesz usunąć wybrane zdjęcia?",
+      "BackToSnapshots": "Powrót do zdjęć",
+      "Snapshots": "zdjęć(cie)"
+    },
+"Compare": {
+      "Title": "Porównanie zdjęć",
+      "ShowChangesOnly": "Pokaż tylko zmiany",
+      "Earlier": "Wcześniejsze zdjęcie",
+      "Later": "Późniejsze zdjęcie",
+      "Field": "Pole",
+      "OldValue": "Wcześniejsza wartość",
+      "NewValue": "Późniejsza wartość",
+      "Print": "Drukuj porównanie",
+      "Result": "Porównanie"
+    },
+    "Table": {
+      "CaseId": "Numer sprawy",
+      "Account": "Konto",
+      "Endpoint": "Punkt końcowy",
+      "Timestamp": "Znacznik czasu",
+      "NoSnapshots": "Nie znaleziono zdjęć."
+    },
+    "Messages": {
+      "SelectTwo": "Wybierz dokładnie 2 zdjęcia tej samej sprawy do porównania",
+      "SelectMore": "Wybierz jeszcze 1 zdjęcie tej samej sprawy",
+      "SelectOnlyTwo": "Wybierz tylko 2 zdjęcia",
+      "ReadyCompare": "Gotowe do porównania!",
+      "SelectSnapshots": "Nie wybrano zdjęć do usunięcia.",
+      "ClearSelection": "Wyczyść wybór",
+      "SelectAll": "Zaznacz/Odznacz wszystko",
+      "AllCases": "-- Wszystkie sprawy --",
+      "AllAccounts": "-- Wszystkie konta --",
+      "AllSources": "-- Wszystkie źródła --",
+      "NoResults": "Brak wyników"
+    }
+  }
+}

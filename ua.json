@@ -1,0 +1,685 @@
+﻿{
+  "Cases": {
+    "Title": "Перелік справ",
+    "New": "Подайте нову заявку",
+    "States": {
+      "1": "новий",
+      "2": "Під час - призначений підпис",
+      "3": "Під час -вимагати формальних дефектів",
+      "4": "Під час",
+      "5": "Під час",
+      "6": "Під час",
+      "7": "Під час - друга інстанція",
+      "8": "Під час",
+      "9": "Під час",
+      "10": "Рішення підписано",
+      "11": "Рішення підписано",
+      "12": "Рішення підписано",
+      "13": "Документи для збору",
+      "14": "Готово",
+      "15": "Готово",
+      "16": "Готово",
+      "17": "Готово",
+      "18": "Готово",
+      "19": "Готово",
+      "20": "Матеріали справи в позику",
+      "21": "призупинено",
+      "22": "Думка надана"
+    },
+    "MakeApplication": "Подати заявку",
+    "Group": {
+      "LegalizationOfStay": "Легалізація перебування - Подайте заяву в MOS",
+      "IssueAndExchangeOfDocuments": "Видача та обмін документами",
+      "Visas": "Візи",
+      "Citizenship": "Громадянство",
+      "Other": "Інший"
+    },
+    "Type": "Тип справи",
+    "Person": "Людина",
+    "Status": "Статус",
+    "CreationDate": "Дата створення",
+    "FileName": "Назва файлу",
+    "UploadedBy": "Завантажено користувачем",
+    "ModificationDate": "Дата модифікації",
+    "NoData": "Немає даних",
+    "Signature": "Номер справи",
+    "Circumstances": {
+      "ChooseCircumstance": "Виберіть обставину",
+      "GoBackBtn": "Назад",
+      "EnterCircumstance": "Введіть обставину",
+      "DifferentCircumstance": "Ще одна обставина",
+      "ChooseCircumstanceBtn": "Вибирайте"
+    },
+    "FilesRequest": {
+      "Title": "Запит на доступ до файлів",
+      "Date": "Дата подачі заяви",
+      "Status": "Статус заявки",
+      "Statusses": {
+        "2": "Надіслано запит на доступ до матеріалів справи. Заявки обробляються в тому порядку, в якому надіслано заявку. Зачекайте, щоб вас повідомили про час, коли ви зможете переглянути матеріали справи.",
+        "5": "Файл недоступний",
+        "6": "Файли готові до перевірки"
+      },
+      "SencFilesAccessRequestBtn": "Подайте запит на доступ до файлів",
+      "SencFilesAccessRequest": {
+        "Title": "Додаток для доступу до файлів",
+        "CaseNumber": "Номер справи:",
+        "Reason": "Причина",
+        "SaveBtn": "Зберегти"
+      }
+    },
+    "SuccessfullyGenerated": "Додаток успішно створено",
+    "SubmitApplicationReminder": "Формування заявки не є підтвердженням її подання. Роздрукуйте заяву з додатками (за потреби) та підпишіть її. Потім запишіться на прийом в офіс, щоб подати заявку.",
+    "AddAttachmentsToCase": "Додайте додатки до справи",
+    "SelectFileToUpload": "Виберіть файл",
+    "FileUploadTitle": "Надіслати файл",
+    "SendFileToUpload": "Надіслати вибраний файл",
+    "SelectedFileToUpload": "Ви вибрали",
+    "UploadedFiles": "надісланий:",
+    "DownloadTemplate": "(Завантажити шаблон)",
+    "DownloadApplicationFile": "Завантажте програму pdf",
+    "MakeAppointmentAtOffice": "Домовтеся про зустріч в офісі",
+    "DocumentTemplatesAvailable": "Доступні шаблони документів",
+    "ReturnToCasesList": "Готово",
+    "BringDocumentPersonally": "Документ повинен бути підготовлений та доставлений в офіс особисто",
+    "SuccessTitle": "додаток успішно сформовано",
+    "BindRelated": "Пов’яжіть справу",
+    "DeadlineForDecision": "Кінцевий термін прийняття рішення",
+    "Reason": "Причина",
+    "RelatedCases": "Пов’язані випадки",
+    "BindCase": "Корпус посилання",
+    "RelatedComplete": "Пов’язані",
+    "RelatedError": "Не вдалося зв’язати справу",
+    "AlreadyRelated": "У системі вже є запит на зв’язування цих питань",
+    "NotExists": "У системі немає випадку з номером ",
+    "FileTooLarge": "Файл завеликий!",
+    "FilesLimitReached": "Досягнуто кількість вкладень.",
+    "FillApplication": "Заповніть заявку",
+    "SubmitApplication": "Подати заявку",
+    "GenerateApplicationBtn": "Створіть додаток",
+    "Errors": {
+      "Label": "Помилки:",
+      "RequiredField": "Поле обов’язкове",
+      "MinimumValue": "Мінімальне значення - ",
+      "MaximumValue": "Максимальне значення - ",
+      "WrongFormat": "Значення має недійсний формат",
+      "OneOf": "Вам слід вибрати один",
+      "FewOf": "Ви повинні вибрати хоча б одну",
+      "FileLimit": "Досягнуто максимальної кількості файлів",
+      "EmptyIf": "поле повинно бути порожнім"
+    },
+    "TimelineEventTypes": {
+      "Created": "заповнення заявки",
+      "MeetingScheduled": "Зустріч в офісі",
+      "ActivityCreated": "Додавання активності",
+      "CorrespondenceSent": "доставка кореспонденції",
+      "CorrespondenceReceived": "отримання кореспонденції",
+      "ProceedingRelationAccepted": "прийняття відносини Трудов",
+      "ProceedingRelationRejected": "відкидання відносини Трудов",
+      "AppointmentMade": "Відвідування офісу",
+      "ProceedingRelationDeleted": "З'єднання корпусу знято",
+      "ProceedingRelationWithDeleted": "Посилання на справу видалено ",
+      "AddProxyPerson": "Доповнення проксі",
+      "RemoveProxyPerson": "Видалення проксі",
+      "UpdateProxyPerson": "Оновлення проксі"
+    },
+    "Timeline": "Часова шкала",
+    "CancelCreatingProceeding": "Скасувати додавання справи",
+    "ConfirmCancelCreatingProceeding": "Ви впевнені, що хочете скасувати додавання справи?",
+    "PayRedirectBtn": "Оплатити гербовий збір",
+    "NoPaymentLink": "Помилка під час завантаження платіжного посилання",
+    "Question": {
+      "Error": {
+        "Default": "Поле було заповнено неправильно",
+        "Title": {
+          "Required": "Заголовок є обов'язковим для заповнення"
+        },
+        "Content": {
+          "Required": "Вміст є обов’язковим для заповнення",
+          "MaxLength": "Вміст не може перевищувати 1500 символів"
+        }
+      },
+      "Dialog": {
+        "Add": "Додайте запитання",
+        "Header": "Задайте питання",
+        "DetailsHeader": "деталі питання",
+        "Close": "Закрий це",
+        "Send": "Надіслати",
+        "SuccessAlert": "Успішно виконано",
+        "FailAlert": "Сталася помилка. Будь ласка, спробуйте ще раз пізніше"
+      },
+      "ProceedingSignature": "Номер справи",
+      "Title": "Назва",
+      "Content": "Зміст",
+      "Titles": {
+        "1": "Відсутні документи",
+        "2": "Довіреність",
+        "3": "Видача свідоцтва",
+        "4": "Огляд матеріалів справи",
+        "5": "Прискорити винесення рішення",
+        "6": "Прискорення видачі картки",
+        "7": "Інший"
+      },
+      "ProceedingType": "Тип виконання",
+      "Questions": "Запитання",
+      "CreatedDate": "Створено",
+      "Status": "Статус",
+      "Add": "Додайте запитання",
+      "Statuses": {
+        "1": "Чекаю на відповідь",
+        "2": "Відповідь"
+      },
+      "Response": "Відповідь",
+      "QuestionContent": "Зміст питання",
+      "ResponseContent": "Вміст відповіді"
+    }
+  },
+  "CaseRelatedDialog": {
+    "ApproveQuestion": "Ви впевнені, що хочете пов’язати справу підписом "
+  },
+  "ProceedingsState": {
+    "Nowa": "новий",
+    "W toku": "Під час",
+    "W toku - nadana sygnatura": "Під час - призначений підпис",
+    "W toku - wezwanie o braki formalne": "Під час -вимагати формальних дефектів",
+    "W toku - II instancja": "Під час - друга інстанція",
+    "Decyzja podpisana": "Рішення підписано",
+    "Dokumenty do odbioru": "Документи для збору",
+    "Zakończona": "Готово",
+    "Zawieszona": "призупинено"
+  },
+  "ChangePassword": {
+    "Header": "Змінити пароль",
+    "OldPassword": "Попередній пароль",
+    "NewPassword": "Новий пароль",
+    "RemindPasswordButton": "Зміна",
+    "SuccessMessage": "Пароль змінено правильно",
+    "FailureMessage": "Помилка зміни пароля"
+  },
+  "Common": {
+    "Top": "Вверх",
+    "Yes": "Так",
+    "No": "Немає",
+    "Search": "Пошук",
+    "Added": "Додано",
+    "Deleted": "Вилучено",
+    "Choose": "вибирати",
+    "Password": "Пароль",
+    "PasswordRequired": "Потрібен пароль",
+    "PhoneNumber": "Номер телефону",
+    "InvalidPassword": "Недійсний пароль",
+    "RepeatPassword": "Повторіть пароль",
+    "RepeatPasswordFail": "Ви повинні повторити пароль",
+    "NotSamePasswords": "Паролі не збігаються",
+    "FailError": "Сталася помилка",
+    "FieldIsRequired": "Поле обов’язкове",
+    "Confirm": "Підтвердити",
+    "Document": {
+      "Name": "Тип посвідчення особи",
+      "TemporaryID": "Тимчасовий документ, що посвідчує особу",
+      "Passport": "Паспорт",
+      "ResidenceCard": "Картка проживання"
+    },
+    "Address": {
+      "Province": "Провіс",
+      "County": "Повіт",
+      "Commune": "Боро",
+      "City": "місцевість",
+      "ZipCode": "ЗІП код",
+      "Street": "Вул",
+      "StreetNumber": "номер вулиці",
+      "ApartmentNumber": "Номер квартири"
+    },
+    "Email": "Електронна пошта",
+    "EPUAPBoxAddress": "Адреса поштової скриньки EPUAP",
+    "PersonalSection": {
+      "Header": "Особисті дані",
+      "Surname": "Прізвище",
+      "Name": "Ім'я",
+      "SecondName": "Прізвище",
+      "SeriesAndNumber": "Серія та номер документа, що посвідчує особу",
+      "IDCountryInfo": "Країна видачі документа, що посвідчує особу",
+      "BirthDate": "Дата народження",
+      "Citizenship": "Громадянство",
+      "SaveSuccess": "Зміна даних збережена"
+    },
+    "ContactData": {
+      "Header": "Контактні дані",
+      "PolishAddressSectionHeader": "Адреса перебування в Польщі",
+      "CorrespondenceSectionHeader": "Адреса для кореспонденції",
+      "SameAddress": "Те саме, що і адреса вашого перебування",
+      "CopyAddress": "Скопіюйте адресу перебування"
+    },
+    "ProxyData": {
+      "Header": "Дані проксі",
+      "HaveProxy": "У мене є проксі",
+      "Name": "Ім'я",
+      "Surname": "Прізвище"
+    },
+    "PasswordStrength": {
+      "LowerCaseCriteriaMsg": "Містить принаймні одну малу літеру",
+      "UpperCaseCriteriaMsg": "Містить принаймні одну велику літеру",
+      "DigitsCriteriaMsg": "Містить принаймні одну цифру",
+      "SpecialCharsCriteriaMsg": "Містить один або кілька спеціальних символів",
+      "MinCharsCriteriaMsg": "Містить принаймні 8 символів"
+    },
+    "SaveButton": "Зберегти",
+    "Close": "Закрий це",
+    "UnknownError": "Невідома помилка",
+    "Validators": {
+      "FieldRequired": "Обов'язкове поле!",
+      "FieldTooShort": "Занадто короткий опис!",
+      "FieldTooLong": "Опис задовгий!",
+      "FieldInvalid": "Опис має бути польською мовою!"
+    },
+    "Cancel": "Скасувати",
+    "Verify": "Підтвердити",
+    "twoFAMethod": "Спосіб отримання сертифіката",
+    "InvalidCaptcha": "Система виявила підозрілу поведінку. Спробуйте знову"
+  },
+  "Table": {
+    "Type": "Тип справи",
+    "Person": "Людина",
+    "Status": "Статус",
+    "CreationDate": "Дата створення",
+    "FileName": "Назва файлу",
+    "UploadedBy": "Завантажено користувачем",
+    "ModificationDate": "Дата модифікації",
+    "NoData": "Немає даних",
+    "Signature": "Номер справи",
+    "EndDate": "Кінцева дата",
+    "StartDate": "початкова дата",
+    "FilterBtn": "Фільтр",
+    "NoFilters": "Немає фільтрів ",
+    "Filters": "Фільтри ",
+    "Dates": {
+      "From": "Від: ",
+      "To": "Вниз: ",
+      "Exact": "Дата: "
+    }
+  },
+  "SideMenu": {
+    "Home": "Додому",
+    "Cases": "Справи",
+    "Files": "Файли",
+    "Help": "Допомога",
+    "AriaLabel": "Бічне меню"
+  },
+  "Register": {
+    "Header": "Реєстрація",
+    "LoginSection": {
+      "Header": "Дані для входу"
+    },
+    "RegisterButton": "Зареєструйтесь",
+    "SuccessMessage": "Обліковий запис створено успішно. На вказану електронну адресу надіслано посилання для підтвердження адреси.",
+    "EmailAlreadyInUseError": "Вказана електронна адреса вже зайнята.",
+    "RegistrationError": "Сталася невідома помилка. Зверніться до адміністратора.",
+    "ConfirmCancelMessage": "Ви впевнені, що хочете скасувати реєстрацію?",
+    "Terms": {
+      "Formula": {
+        "IAccept": "я приймаю ",
+        "Terms": "Правила та умови. "
+      },
+      "Title": "Правила та умови",
+      "CloseBtn": "Закрити"
+    },
+    "PrivacyPolicy": {
+      "Formula": {
+        "IAccept": "я приймаю",
+        "PrivacyPolicy": "політика конфіденційності. "
+      },
+      "Title": "політика конфіденційності",
+      "CloseBtn": "Закрити"
+    }
+  },
+  "Profile": {
+    "Header": "Профіль",
+    "EditButton": "Редагувати",
+    "History": {
+      "Title": "Історія змін даних облікового запису",
+      "FieldName": "Назва поля",
+      "OldValue": "Старе значення",
+      "NewValue": "Нове значення",
+      "ChangeDate": "дата зміни"
+    }
+  },
+  "TopMainMenu": {
+    "Register": "Зареєструйте",
+    "Login": "Увійти",
+    "Profile": "Профіль",
+    "ChangePassword": "Змінити пароль",
+    "AccountHistory": "Історія змін даних",
+    "Logout": "Вийти",
+    "ProfileAriaLabel": "Параметри профілю",
+    "LanguageAriaLabel": "Вибір мови",
+    "RegisterAriaLabel": "Реєстрація та вхід"
+  },
+  "Login": {
+    "Login": "Увійти",
+    "Email": "Електронна пошта",
+    "SignIn": "Увійти",
+    "CreateAcc": "Створити аккаунт",
+    "FailError": "Помилка логіну",
+    "LoginRequired": "Необхідний вхід",
+    "EmailRequired": "Електронна адреса потрібна",
+    "ForgotPassword": "Я забув свій пароль",
+    "InvalidCredentials": "Неправильна електронна адреса та пароль",
+    "CodeSMS": "Код надіслано текстовим повідомленням",
+    "CodeEmail": "Код надіслано електронною поштою",
+    "InsertCode": "Введіть код",
+    "CodeRequired": "Необхідний код",
+    "InvalidCode": "Неверный код учетной записи",
+    "ExpiredCode": "Термін дії облікового коду минув",
+    "TwoFAOtherError": "Не вдалося увійти. Спробуйте знову."
+  },
+  "Files": {
+    "Types": {
+      "1": "PDF",
+      "2": "PNG",
+      "3": "JPG",
+      "4": "DOCX",
+      "5": "Інший"
+    },
+    "File": "Файл",
+    "Signature": "Підпис",
+    "Type": "Тип файлу",
+    "UploadedBy": "Завантажено користувачем",
+    "CreateDate": "Дата створення",
+    "EditDate": "Дата модифікації",
+    "NotExists": "файл не існує",
+    "List": "Список файлів"
+  },
+  "ResetPassword": {
+    "Header": "Скинути пароль",
+    "Email": "Електронна пошта",
+    "ResetPasswordButton": "Скинути пароль",
+    "EmailRequired": "Електронна адреса потрібна"
+  },
+  "ForgotPassword": {
+    "EmailSended": "На вказану електронну адресу надіслано електронне повідомлення із посиланням для скидання пароля.",
+    "ResetWarrning": "Жоден обліковий запис не пов’язаний із вказаною електронною адресою.",
+    "ResetError": "Сталася невідома помилка. Зверніться до адміністратора."
+  },
+  "EmailConfirmed": {
+    "Accepted": "Електронний лист підтверджено, ви будете перенаправлені на сторінку входу. Якщо це не відбувається автоматично, натисніть на",
+    "Link": "link."
+  },
+  "RelatedProceedingStatusType": {
+    "1": "Очікує затвердження",
+    "2": "Прийнято",
+    "3": "Відхилено"
+  },
+  "RelatedReason": {
+    "1": "сім'я",
+    "2": "дитина",
+    "3": "батько",
+    "4": "подружжя"
+  },
+  "AccountFieldnames": {
+    "Firstname": "Ім'я",
+    "FirstName": "Ім'я",
+    "SecondName": "Прізвище",
+    "Surname": "прізвище",
+    "PhoneNumber": "Телефонний номер",
+    "Email": "Електронна пошта",
+    "IdentityDocument": {
+      "IdentityDocumentType.Id": "Тип документа",
+      "TypeId": "Тип документа",
+      "DocumentNumber": "Номер документа",
+      "IssuanceCountryId": "Країна видачі",
+      "IssuanceCountry.Id": "Країна видачі"
+    },
+    "ContactDetails": {
+      "ResidenceAddress": {
+        "Province": "Адреса - Воєводство",
+        "County": "Адреса - Повіт",
+        "Community": "Адреса - Громада",
+        "Locality": "Адреса - Місто",
+        "ZipCode": "Адреса - ЗІП код",
+        "Street": "Адреса - Вул",
+        "HouseNumber": "Адреса - номер будинку",
+        "ApartmentNumber": "Адреса - Номер квартири"
+      },
+      "PostalAddress": {
+        "Province": "Поштова адреса - Воєводство",
+        "County": "Поштова адреса - Повіт",
+        "Community": "Поштова адреса - Громада",
+        "Locality": "Поштова адреса - Місто",
+        "ZipCode": "Поштова адреса - ЗІП код",
+        "Street": "Поштова адреса - Вул",
+        "HouseNumber": "Поштова адреса - номер будинку",
+        "ApartmentNumber": "Поштова адреса - Номер квартири"
+      }
+    },
+    "DateOfBirth": "Дата народження",
+    "ProxyPersonField": "Довіреність",
+    "ProxyPerson": {
+      "Name": "Довіреність - Ім'я",
+      "Surname": "Довіреність - прізвище",
+      "PhoneNumber": "Довіреність - Телефонний номер",
+      "EPuapAddress": "Довіреність - EPuap-адреса",
+      "PostalAddress": {
+        "Province": "Довіреність - Поштова адреса - Воєводство",
+        "County": "Довіреність - Поштова адреса - Повіт",
+        "Community": "Довіреність - Поштова адреса - Громада",
+        "Locality": "Довіреність - Поштова адреса - Місто",
+        "ZipCode": "Довіреність - Поштова адреса - ЗІП код",
+        "Street": "Довіреність - Поштова адреса - Вул",
+        "HouseNumber": "Довіреність - Поштова адреса - номер будинку",
+        "ApartmentNumber": "Довіреність - Поштова адреса - Номер квартири"
+      }
+    },
+    "Citizenship.Id": "Громадянство",
+    "HasProxy": "Має адвоката"
+  },
+  "Reservations": {
+    "AlreadyTaken": "Вибрана дата недоступна",
+    "ChooseQueue": "Виберіть чергу",
+    "ChooseLocation": "Виберіть місце",
+    "MakeAppointment": "Запишіться на зустріч в офісі",
+    "Name": "Ім'я",
+    "LastName": "Прізвище",
+    "DateOfBirth": "Дата народження",
+    "TicketValue": "Номер квитка",
+    "StartDate": "Дата та час початку",
+    "Appointment": "зустріч",
+    "NotPossible": "Роздрукуйте заявку, підпишіть її та подайте особисто в офіс за адресою вул. Маршалковська 3/5 у Варшаві.",
+    "TypeI": "Роздрукуйте заявку, підпишіть її та подайте особисто в офіс за адресою вул. Маршалковська 3/5 у Варшаві (слід вивчити цифру з літерою 'I')",
+    "TypeW": "Роздрукуйте заявку, підпишіть її та подайте особисто в офіс за адресою вул. Маршалковська 3/5 у Варшаві (слід вивчити цифру з літерою 'W')",
+    "TypeX": "Заповніть заявку в модулі управління справами MOS, доступному за адресою https://www.mos.cudzoziemcy.gov.pl",
+    "TypeF": "Заповніть заявку в модулі управління справами MOS, доступному за адресою https://www.mos.cudzoziemcy.gov.pl",
+    "TypeG": "Заповніть заявку в модулі управління справами MOS, доступному за адресою https://www.mos.cudzoziemcy.gov.pl",
+    "TypeS": "Заповніть заявку в модулі управління справами MOS, доступному за адресою https://www.mos.cudzoziemcy.gov.pl",
+    "ConfirmDialog": {
+      "Title": "Подтверждение",
+      "Message": "Ви підтверджуєте дату візиту?",
+      "CancelBtn": "Немає",
+      "ConfirmBtn": "Так"
+    }
+  },
+  "Dashboard": {
+    "ActiveCases": {
+      "Title": "Мої активні справи",
+      "Signature": "Номер справи",
+      "Type": "Тип справи",
+      "Status": "Статус",
+      "DecisionDate": "Кінцевий термін прийняття рішення",
+      "SubmitDate": "дата подання",
+      "ForeignerFullName": "людина",
+      "RelatedSignature": "Пов’язані зі справою"
+    },
+    "RelatedCases": {
+      "Title": "Пов’язані активні випадки",
+      "Signature": "Номер справи",
+      "Person": "Людина",
+      "Status": "Статус",
+      "DecisionDate": "Кінцевий термін винесення рішення"
+    },
+    "FutureAppointments": {
+      "Title": "Планові відвідування офісу",
+      "StartDate": "Дата",
+      "Signature": "Номер справи",
+      "QueueName": "Назва черги",
+      "TicketValue": "Номер квитка",
+      "OfficialAppointmentName": "Ім'я",
+      "OfficialAppointmentPlace": "Місце"
+    }
+  },
+  "Help": {
+    "Title": "Інформаційні сторінки",
+    "NoData": "Немає даних",
+    "Files": "Файли"
+  },
+  "CaseDetails": {
+    "Title": "Процедура",
+    "DecisionDate": "Дата рішення",
+    "CreateDate": "Створено",
+    "GeneralInfo": "Загальна інформація",
+    "CaseNumber": "Номер справи",
+    "Description": "Опис",
+    "Circumstance": "Факт",
+    "LastUpdated": "Оновлення",
+    "DocumentNumber": "No документа",
+    "DocumentType": "Тип документа",
+    "RelatedDocuments": {
+      "Title": "Супутні документи",
+      "FileName": "Ім'я",
+      "CreateDate": "Створено"
+    }
+  },
+  "AssignmentCode": {
+    "Button": "Додайте встановлений випадок",
+    "Assign": "Призначити",
+    "Code": "Код присвоєння",
+    "Title": "Призначити справу",
+    "Error": "Помилка призначення коду",
+    "Success": "Справа успішно призначена"
+  },
+  "Pagination": {
+    "FirstPage": "Перша сторінка",
+    "ItemsPerPage": "Елементів на сторінці",
+    "LastPage": "Остання сторінка",
+    "NextPage": "Наступна сторінка",
+    "PreviousPage": "Попередня сторінка",
+    "Of": "з"
+  },
+  "Cookie": {
+    "Message": "Для надання послуг на найвищому рівні ми використовуємо файли cookie. Використання нашого веб-сайту означає, що вони будуть зберігатися на вашому пристрої. Ви можете будь-коли змінити налаштування браузера.",
+    "Dismiss": "Зрозумів!",
+    "Link": "Вивчайте більше"
+  },
+  "CaseProxyInfo": {
+    "Proxies": "Агенти",
+    "FullName": "Ім'я та прізвище",
+    "Address": "Адреса",
+    "Action": "Поділитися",
+    "NoData": "Ніяких довірених осіб",
+    "Add": "Додати",
+    "ConfirmDialog": {
+      "Title": "Підтвердження",
+      "Message": "Ви впевнені, що хочете видалити делегата?",
+      "CancelBtn": "Немає",
+      "ConfirmBtn": "Так"
+    }
+  },
+  "ProxyPersonDialog": {
+    "Header": "Довіреність",
+    "Name": "Ім'я",
+    "Surname": "Прізвище",
+    "PhoneNumber": "Номер телефону",
+    "EpuapAddress": "Адреса ePUAP"
+  },
+  "CaptchaDialog": {
+    "Header": "Перевірка CAPTCHA"
+  },
+  "2FA": {
+    "InvalidPhoneNumber": "Заповніть свій номер телефону під час редагування профілю користувача або перевірте його правильність.",
+    "Sending2FACode": "Надсилаю код..."
+  },
+  "Notification": {
+    "Subject": {
+      "Changes": "Виявлено зміни",
+      "Error": "Сталася помилка"
+    },
+    "Body": {
+      "Summary": "Підсумок",
+      "ChangesDetected": "змін",
+      "CaseDetails": "Деталі справи",
+      "CaseId": "Номер справи",
+      "CaseType": "Тип",
+      "Person": "Особа",
+      "NoChanges": "(без змін)",
+      "Error": "Помилка",
+      "Time": "Час",
+      "Status": "Статус",
+      "NewDocument": "Новий документ",
+      "DateChange": "Зміна дати",
+      "SentBy": "Надіслано Inpol Monitor",
+      "Accounts": "Облікові записи"
+    },
+    "Error": {
+      "CheckFailed": "Перевірка не вдалася",
+      "ErrorType": "Тип помилки",
+      "Message": "Повідомлення"
+    }
+  },
+  "Web": {
+"Nav": {
+      "Snapshots": "Знімки",
+      "Logout": "Вийти",
+      "LoggedOut": "Ви вийшли з системи.",
+      "LoggedIn": "Ласкаво просимо, {username}!",
+      "LanguageChanged": "Мову змінено на Українська",
+      "Login": "Увійти"
+    },
+    "Login": {
+      "Title": "Вхід",
+      "Username": "Ім'я користувача",
+      "Password": "Пароль",
+      "Submit": "Увійти",
+      "InvalidCredentials": "Неправильне ім'я користувача або пароль.",
+      "PleaseEnter": "Введіть ім'я користувача та пароль."
+    },
+    "Index": {
+      "Title": "Знімки справ",
+      "Filter": "Фільтрувати знімки",
+      "ApplyFilters": "Застосувати фільтри",
+      "NoFilters": "Очистити фільтри",
+      "Compare": "Порівняти вибрані",
+      "Delete": "Видалити вибрані",
+      "DeleteConfirm": "Ви впевнені, що хочете видалити вибрані знімки?",
+      "BackToSnapshots": "Назад до знімків",
+      "Snapshots": "знімк(и)"
+    },
+"Compare": {
+      "Title": "Порівняння знімків",
+      "ShowChangesOnly": "Показати тільки зміни",
+      "Earlier": "Раніший знімок",
+      "Later": "Пізніший знімок",
+      "Field": "Поле",
+      "OldValue": "Раніше значення",
+      "NewValue": "Пізніше значення",
+      "Print": "Друкувати порівняння",
+      "Result": "Порівняння"
+    },
+    "Table": {
+      "CaseId": "Номер справи",
+      "Account": "Обліковий запис",
+      "Endpoint": "Кінцева точка",
+      "Timestamp": "Відбиток часу",
+      "NoSnapshots": "Знімки не знайдено."
+    },
+    "Messages": {
+      "SelectTwo": "Виберіть рівно 2 знімки тієї ж справи для порівняння",
+      "SelectMore": "Виберіть ще 1 знімок тієї ж справи",
+      "SelectOnlyTwo": "Виберіть лише 2 знімки",
+      "ReadyCompare": "Готово до порівняння!",
+      "SelectSnapshots": "Не вибрано знімків для видалення.",
+      "ClearSelection": "Очистити вибір",
+      "SelectAll": "Вибрати/Сняти вибір",
+      "AllCases": "-- Всі справи --",
+      "AllAccounts": "-- Всі облікові записи --",
+      "AllSources": "-- Всі джерела --",
+      "NoResults": "Результатів немає"
+    }
+  }
+}

@@ -1,0 +1,808 @@
+{
+  "Cases": {
+    "Title": "Case list",
+    "New": "Submit a new application",
+    "States": {
+      "1": "New",
+      "2": "In progress - signature assigned",
+      "3": "In progress - call for formal defects",
+      "4": "In progress",
+      "5": "In progress",
+      "6": "In progress",
+      "7": "In progress - the second instance",
+      "8": "In progress",
+      "9": "In progress",
+      "10": "Decision signed",
+      "11": "Decision signed",
+      "12": "Decision signed",
+      "13": "Documents to pick up",
+      "14": "Closed",
+      "15": "Closed",
+      "16": "Closed",
+      "17": "Closed",
+      "18": "Closed",
+      "19": "Closed",
+      "20": "Proceeding files on loan",
+      "21": "Suspended",
+      "22": "Opinion delivered"
+    },
+    "MakeApplication": "Make an application",
+    "Group": {
+      "LegalizationOfStay": "Legalization of stay - Submit the application in MOS",
+      "IssueAndExchangeOfDocuments": "Issue and exchange of documents",
+      "Visas": "Visas",
+      "Citizenship": "Citizenship",
+      "Other": "Other"
+    },
+    "Type": "Case type",
+    "Person": "Person",
+    "Status": "Status",
+    "CreationDate": "Creation date",
+    "FileName": "File name",
+    "UploadedBy": "Uploaded by",
+    "ModificattionDate": "Modification date",
+    "NoData": "No data",
+    "Signature": "Case number",
+    "Circumstances": {
+      "ChooseCircumstance": "Choose circumstance",
+      "GoBackBtn": "Back",
+      "EnterCircumstance": "Enter circumstance",
+      "DifferentCircumstance": "Different circumstance",
+      "ChooseCircumstanceBtn": "Choose"
+    },
+    "FilesRequest": {
+      "Title": "Files access request",
+      "Date": "Date of application",
+      "Status": "Application status",
+      "Statusses": {
+        "2": "A request for access of the case files has been sent. Applications are processed in the order in which the application is sent. Wait to be informed about the time you can see the case files.",
+        "5": "Proceeding files inaccessible",
+        "6": "Proceeding files ready to collect"
+      },
+      "SencFilesAccessRequestBtn": "Submit a request for files access",
+      "SencFilesAccessRequest": {
+        "Title": "Application for files access",
+        "CaseNumber": "Case number:",
+        "Reason": "Reason",
+        "SaveBtn": "Save"
+      }
+    },
+    "SuccessfullyGenerated": "The application has been successfully generated",
+    "SubmitApplicationReminder": "Generating an application does not constitute proof of submission. Print the application and attachments (if required) and sign. Then make an appointment to visit the office to submit the application.",
+    "AddAttachmentsToCase": "Add attachments to the case",
+    "SelectFileToUpload": "Choose a file",
+    "SendFileToUpload": "Send selected file",
+    "FileUploadTitle": "Send file",
+    "SelectedFileToUpload": "You chose",
+    "UploadedFiles": "Sent:",
+    "DownloadTemplate": "(Download template)",
+    "DownloadApplicationFile": "Download application pdf",
+    "MakeAppointmentAtOffice": "Make an appointment at the office",
+    "DocumentTemplatesAvailable": "Document templates available",
+    "ReturnToCasesList": "Close",
+    "BringDocumentPersonally": "The document must be prepared and personally delivered to the office",
+    "SuccessTitle": "The application has been successfully generated",
+    "BindRelated": "Link the case",
+    "DeadlineForDecision": "Deadline for decision",
+    "Reason": "Reason",
+    "RelatedCases": "Related cases",
+    "BindCase": "Link case",
+    "RelatedComplete": "Related",
+    "RelatedError": "There was a problem linking case",
+    "AlreadyRelated": "There is already a request to link these issues in the system ",
+    "NotExists": "In the system there is not the case with number ",
+    "FileTooLarge": "File is too large!",
+    "FilesLimitReached": "You have reached the limit of attachments quantity.",
+    "FillApplication": "Fill application",
+    "SubmitApplication": "Submit application",
+    "GenerateApplicationBtn": "Generate application",
+    "Errors": {
+      "Label": "Errors:",
+      "RequiredField": "Field is required",
+      "MinimumValue": "Minimum value is ",
+      "MaximumValue": "Maximum value is ",
+      "WrongFormat": "Value is in wrong format",
+      "OneOf": "You must choose one",
+      "FewOf": "You must choose at least one",
+      "FileLimit": "Maximum number of files has been reached",
+      "EmptyIf": "Field must be empty"
+    },
+    "TimelineEventTypes": {
+      "Created": "Filling in application",
+      "MeetingScheduled": "Meeting in Office",
+      "ActivityCreated": "Adding activity",
+      "CorrespondenceSent": "Shipping correspondence",
+      "CorrespondenceReceived": "Receipt of correspondence",
+      "ProceedingRelationAccepted": "Case relation acceptance",
+      "ProceedingRelationRejected": "Case relation rejection",
+      "AppointmentMade": "Visit to the office",
+      "ProceedingRelationDeleted": "Deleted proceeding relation",
+      "ProceedingRelationWithDeleted": "Deleted relation with proceeding ",
+      "AddProxyPerson": "Add proxy",
+      "RemoveProxyPerson": "Remove proxy",
+      "UpdateProxyPerson": "Update proxy"
+    },
+    "Timeline": "Timeline",
+    "CancelCreatingProceeding": "Cancel creating proceeding",
+    "ConfirmCancelCreatingProceeding": "Are you sure you want to cancel creating proceeding?",
+    "PayRedirectBtn": "Pay stamp duty",
+    "NoPaymentLink": "Error when downloading payment link",
+    "Question": {
+      "Error": {
+        "Default": "Field was filled incorrectly",
+        "Title": {
+          "Required": "Title is required"
+        },
+        "Content": {
+          "Required": "Content is required",
+          "MaxLength": "Content can be up to 1500 characters long"
+        }
+      },
+      "Dialog": {
+        "Add": "Add a question",
+        "Header": "Ask a question",
+        "DetailsHeader": "Question details",
+        "Close": "Close",
+        "Send": "Send",
+        "SuccessAlert": "Successfully completed",
+        "FailAlert": "An error occurred, please try again later"
+      },
+      "ProceedingSignature": "Proceeding number",
+      "Title": "Title",
+      "Content": "Content",
+      "Titles": {
+        "1": "Missing documents",
+        "2": "Proxy",
+        "3": "Issuance of a certificate",
+        "4": "Inspection of the proceeding files",
+        "5": "Acceleration of decision issuance",
+        "6": "Acceleration of card issuance",
+        "7": "Other"
+      },
+      "ProceedingType": "Proceeding type",
+      "Questions": "Questions",
+      "CreatedDate": "Created at",
+      "Status": "Status",
+      "Add": "Add a question",
+      "Statuses": {
+        "1": "Waiting for an answer",
+        "2": "Answer"
+      },
+      "Response": "Response",
+      "QuestionContent": "Question Content",
+      "ResponseContent": "Response Content",
+      "FieldLabels": {
+        "title": "Title",
+        "status": "Status",
+        "status_label": "Status Label",
+        "body": "Content",
+        "sentTime": "Sent Time",
+        "answer": "Answer",
+        "responseTime": "Response Time"
+      }
+    }
+  },
+  "CaseRelatedDialog": {
+    "ApproveQuestion": "Are you sure you want to bind the case with the signature "
+  },
+  "ProceedingsState": {
+    "Nowa": "New",
+    "W toku": "In progress",
+    "W toku - nadana sygnatura": "In progress - signature assigned",
+    "W toku - wezwanie o braki formalne": "In progress - call for formal defects",
+    "W toku - II instancja": "In progress - the second instance",
+    "Decyzja podpisana": "Decision signed",
+    "Dokumenty do odbioru": "Documents to pick up",
+    "Zakończona": "Finished",
+    "Zawieszona": "Suspended"
+  },
+  "ChangePassword": {
+    "Header": "Change password",
+    "OldPassword": "Previous password",
+    "NewPassword": "New password",
+    "RemindPasswordButton": "Change",
+    "SuccessMessage": "Password changed successfully",
+    "FailureMessage": "Error during password change"
+  },
+  "Common": {
+    "Top": "Top",
+    "Yes": "Yes",
+    "No": "No",
+    "Search": "Search",
+    "Added": "Added",
+    "Deleted": "Deleted",
+    "Choose": "Choose",
+    "Password": "Password",
+    "PhoneNumber": "Phone number",
+    "PasswordRequired": "Password is required",
+    "InvalidPassword": "Invalid password",
+    "RepeatPassword": "Repeat password",
+    "RepeatPasswordFail": "You must repeat the password",
+    "NotSamePasswords": "The passwords do not match",
+    "FailError": "An error has occured",
+    "FieldIsRequired": "Field is required",
+    "Confirm": "Confirm",
+    "Document": {
+      "Name": "Identity document type",
+      "TemporaryID": "Temporary identity document",
+      "Passport": "Passport",
+      "ResidenceCard": "Residence Card"
+    },
+    "Address": {
+      "Province": "Provice",
+      "County": "County",
+      "Commune": "Commune",
+      "City": "Town",
+      "ZipCode": "Zip code",
+      "Street": "Street",
+      "StreetNumber": "Street number",
+      "ApartmentNumber": "Apartment number"
+    },
+    "Email": "E-mail",
+    "EPUAPBoxAddress": "EPUAP mailbox address",
+    "PersonalSection": {
+      "Header": "Personal data",
+      "Surname": "Surname",
+      "Name": "Name",
+      "SecondName": "Second name",
+      "SeriesAndNumber": "Series and number of the identity document",
+      "IDCountryInfo": "Country of issue of the identity document",
+      "BirthDate": "Birth date",
+      "Citizenship": "Citizenship",
+      "SaveSuccess": "Data change saved"
+    },
+    "ContactData": {
+      "Header": "Contact Details",
+      "PolishAddressSectionHeader": "Address of stay in Poland",
+      "CorrespondenceSectionHeader": "Correspondence address",
+      "SameAddress": "Same as the address of your stay",
+      "CopyAddress": "Copy the address of the stay"
+    },
+    "ProxyData": {
+      "Header": "Proxy data",
+      "HaveProxy": "I have a proxy",
+      "Name": "Name",
+      "Surname": "Surname"
+    },
+    "PasswordStrength": {
+      "LowerCaseCriteriaMsg": "Contains at least one lower character",
+      "UpperCaseCriteriaMsg": "Contains at least one upper character",
+      "DigitsCriteriaMsg": "Contains at least one digit character",
+      "SpecialCharsCriteriaMsg": "Contains at least one special character",
+      "MinCharsCriteriaMsg": "Contains at least 8 characters"
+    },
+    "SaveButton": "Save",
+    "Close": "Close",
+    "UnknownError": "Unknown error",
+    "Validators": {
+      "FieldRequired": "Field is required!",
+      "FieldTooShort": "Description is too short!",
+      "FieldTooLong": "Description is too long!",
+      "FieldInvalid": "Description must be in polish!"
+    },
+    "Cancel": "Cancel",
+    "Verify": "Verify",
+    "twoFAMethod": "Method of receiving the certificate",
+    "InvalidCaptcha": "The system has detected suspicious behavior. Try again"
+  },
+  "Table": {
+    "Type": "Case type",
+    "Person": "Person",
+    "Status": "Status",
+    "CreationDate": "Creation date",
+    "FileName": "File name",
+    "UploadedBy": "Uploaded by",
+    "ModificattionDate": "Modification date",
+    "NoData": "No data",
+    "Signature": "Case number",
+    "EndDate": "End date",
+    "StartDate": "Start date",
+    "FilterBtn": "Filter",
+    "NoFilters": "No filters",
+    "Filters": "Filters",
+    "Dates": {
+      "From": "From: ",
+      "To": "To: ",
+      "Exact": "Date: "
+    }
+  },
+  "SideMenu": {
+    "Home": "Home",
+    "Cases": "Cases",
+    "Files": "Files",
+    "Help": "Help",
+    "AriaLabel": "Side menu"
+  },
+  "Register": {
+    "Header": "Registration",
+    "LoginSection": {
+      "Header": "Login data"
+    },
+    "RegisterButton": "Register",
+    "SuccessMessage": "You have successfully created an account. A link to confirm the address was sent to the e-mail address provided.",
+    "EmailAlreadyInUseError": "Account for the given e-mail address already exists.",
+    "RegistrationError": "Registration failed. Please check your data.",
+    "ConfirmCancelMessage": "Are you sure you want to cancel your registration?",
+    "Terms": {
+      "Formula": {
+        "IAccept": "I accept ",
+        "Terms": "the terms and conditions. "
+      },
+      "Contents": {
+        "FullTitle": "TERMS AND CONDITIONS OF USE OF THE \"IN POL\" PORTAL",
+        "Paragraphs": {
+          "1": {
+            "Header": "DEFINITIONS",
+            "Admin": "<strong>Administrator -</strong> Mazovian Governor performing his duties with the assistance of the Mazovian Voivodship Office in Warsaw.",
+            "Portal": "<strong>Portal -</strong> means the Foreigner's Portal \"IN POL\"",
+            "Account": "<strong>Account -</strong> maintained for the User by the Administrator under a unique name (login), an account which is a collection of resources where the User's data and information about his/her activities within the \"IN POL\" Portal are collected, which the User manages independently.",
+            "Login": "<strong>Login -</strong> the User's name selected during registration on the Portal, which the User will use when accessing the Account. The Login may not contain vulgar, offensive or illegal content, nor may it be identical to the Login of another User or violate any other rules specified in the Regulations.",
+            "Services": "<strong>Services -</strong> services provided by the Administrator to the User in accordance with the provisions of the Terms and Conditions.",
+            "User": "<strong>User -</strong> any natural person with full legal capacity who has created an Account and accepted the provisions of the Terms and Conditions and provided his/her data during the User registration procedure.",
+            "Blockade": "<strong>Blockade -</strong> blockade, permanent or temporary, depending on the Administrator's or its designee's discretion, of the access of a User who has violated the provisions of the Terms and Conditions or the law, to the portal, the Account or individual elements of the portal; in situations indicated in the Terms and Conditions, temporary or permanent removal of the User Account is also provided for."
+          },
+          "2": {
+            "Header": "PRELIMINARY PROVISIONS",
+            "Point1": "The Regulations set out the rules for the operation and use of the Portal provided by the Administrator for the benefit of Users.",
+            "Point2": "The Services are provided on the basis of the principles set out in the Terms and Conditions and the commonly applicable provisions of the law, and violation of the provisions of the Terms and Conditions by the User will result in consequences arising directly from the content of the Terms and Conditions and the aforementioned provisions of the law.",
+            "Point3": "The content of the Regulations is provided to the User free of charge before registration. Lack of acceptance of the Regulations prevents the use of the portal."
+          },
+          "3": {
+            "Header": "GENERAL RULES ON THE USE OF THE PORTAL",
+            "Point1": {
+              "PointText": "The user may:",
+              "Subpoint1": "Modify the User data in the Profile using the options available in the Portal.",
+              "Subpoint2": "Use the Website and its functionalities in accordance with its purpose and the provisions of the Regulations."
+            },
+            "Point2": {
+              "PointText": "The user shall, in particular:",
+              "Subpoint1": "Refrain from any actions that may hinder or interfere with the functioning of the Portal and from using the Portal and its functionalities in a manner that is disruptive to other Users or the Administrator.",
+              "Subpoint2": "Refrain from any actions that violate the privacy of Portal users, in particular collecting, processing and disseminating information about them, without their express consent, unless this is permitted by law and the provisions of the Terms and Conditions."
+            },
+            "Point3": {
+              "PointText": "It is not permitted to use the Portal and its functionalities for purposes other than those arising from the nature and purpose of the Portal and resulting from the Terms and Conditions, including for purposes other than the use of the Services. In particular, it is not permitted to:",
+              "Subpoint1": "Send spam.",
+              "Subpoint2": "Take any action that may cause damage, including, in particular, damage to the Administrator, other Users or third parties.",
+              "Subpoint3": "Post false data or misleading information on the Portal.",
+              "Subpoint4": "Impersonate other Users, state or imply a false identity of the User.",
+              "Subpoint5": "Log into the Portal using the login details of another User without the User's knowledge or consent."
+            },
+            "Point4": "The User is fully responsible for the use of the Account on the Portal, in a manner contrary to the Terms and Conditions or generally applicable law and its consequences of such action.",
+            "Point5": "For non-compliance with the provisions of the Terms and Conditions or commonly applicable laws by the User, a Blockade may be imposed on the User, the imposition of which shall be decided by the Administrator.",
+            "Point6": "If concerning a part of the functionality of the Portal the Blockade does not result in the cessation of the violation of the provisions of the Regulations or commonly applicable laws, access to the Portal may be permanently blocked."
+          },
+          "4": {
+            "Header": "TECHNICAL REQUIREMENTS",
+            "Point1": {
+              "PointText": "The technical requirements necessary for the User to use the Portal are as follows:",
+              "Subpoint1": "Having a device that allows access to the Internet, equipped with a working operating system, such as Linux or Windows.",
+              "Subpoint2": "Installing on the device referred to above the latest, up-to-date version of a web browser that provides access to Internet resources and accepts cookies, i.e. Internet Explorer, Microsoft Edge, Mozilla Firefox, Safari, Google Chrome or other compatible browser."
+            },
+            "Point2": "The Administrator shall not be responsible for improper operation of the Portal on a device that does not meet the technical requirements."
+          },
+          "5": {
+            "Point1": "By completing the Portal's registration procedure, which results in the creation of an Account, the User ensures and declares that he/she has read and accepts the content of the entire Terms and Conditions and undertakes to adhere to them."
+          },
+          "6": {
+            "Header": "USER ACCOUNT",
+            "Point1": {
+              "Subpoint1": "It is free for the User to have an Account within the Portal, as well as to view and change data.",
+              "Subpoint2": "The Administrator will presume that the information and statements sent from the e-mail address provided by the User originate from the User, and that the actions performed by the person logged into the Portal using the User's Login and Password were performed by the User, unless the User provides evidence to the contrary.",
+              "Subpoint3": "All information posted on the Portal must be true, accurate and not misleading.",
+              "Subpoint4": "Information must be updated in the event of material changes or as needed."
+            }
+          },
+          "7": {
+            "Header": "SAFETY RULES",
+            "Point1": "It is the user's responsibility to protect account parameters from third parties.",
+            "Point2": "The User is responsible for the misuse of the account on the Portal, including in particular if the login, password or access key is made available to third parties.",
+            "Point3": {
+              "PointText": "The User is obliged to immediately inform the Administrator about the detected case:",
+              "Subpoint1": "abnormal or unusual operation of the Portal;",
+              "Subpoint2": "loss of login and password;",
+              "Subpoint3": "abnormal or unusual operation of other Users or third parties regarding the Portal or the data contained therein;",
+              "Subpoint4": "unauthorized use of the Portal;",
+              "Subpoint5": "use of the data contained in the Portal by unauthorised persons or for purposes other than those specified in the Terms and Conditions;",
+              "Subpoint6": "the need to disable access to the Portal."
+            },
+            "Point4": "It is prohibited to post content that does not comply with applicable law.",
+            "Point5": "The Administrator is not responsible for the modification, loss, as well as for the disclosure of data entered by the User in the Portal for reasons attributable to the User, in particular due to the loss or improper security of the login or password."
+          },
+          "8": {
+            "Header": "FINAL PROVISIONS",
+            "Point1": "The Administrator reserves the right to change the provisions of the Terms and Conditions.",
+            "Point2": "The Administrator will make every effort to ensure that the Portal and all Services made available through it operate continuously and without interruption, however, the Administrator is not responsible for disruptions caused by force majeure, failures or unauthorised interference by Users or third parties, insufficient bandwidth of the connection by which the User uses the Portal, violation of the Terms and Conditions by the User.",
+            "Point3": "The Administrator reserves the right to temporarily, fully or partially shut down the Portal in order to improve it, add services or carry out maintenance, without prior notice to the Users.",
+            "Point4": "The Administrator reserves the possibility of implementing in the Portal, in all its levels, functional, identification or other solutions that prove appropriate to the subject matter or technical conditions of the Portal, in relation to the possibility of the occurrence of undesirable behaviours or events or that threaten the rights or interests of the Users or the Administrator or the legitimate interests of third parties.",
+            "Point5": "Suggestions regarding the operation of the Portal should be submitted to the e-mail address: wsc@mazowieckie.pl"
+          }
+        }
+      },
+      "Title": "Terms and conditions",
+      "CloseBtn": "Close"
+    },
+    "PrivacyPolicy": {
+      "Formula": {
+        "IAccept": "I accept ",
+        "PrivacyPolicy": "the privacy policy. "
+      },
+      "Contents": {
+        "1": "The administrator of the Platform is the <b>Mazovian Governor</b>.",
+        "2": "The administrator of the Platform attaches particular importance to respecting the privacy of users who use the service.",
+        "3": "Personal data means information that allows an individual or entity to be identified. Data processing is any operation concerning its use such as collection, consultation, recording, organization, storage, modification, sharing or deletion.",
+        "4": "The Platform Administrator processes personal data for the purposes of carrying out public tasks. Depending on the task, there may be different legal bases for the processing, collection and use of personal data.",
+        "5": "Individuals visiting the Platform <b>inpol.mazowieckie.pl </b> have control over the personal data provided. The portal collects data to the minimum extent necessary only to serve the case.",
+        "6": "In order to use the <b>IN POL</b> Platform, we may use cookies, which are small files stored on the access device used to view the website. They allow us to personalize your session on the site and store, among other things, information such as your IP address, user session data, saved preferences and settings, date of last visit.",
+        "7": "The <b>IN POL</b> platform also uses cookies to collect statistics and user behavior on particular subpages, to monitor traffic on particular services, to integrate with third-party applications such as: the Trusted Profile, ePUAP, KIR, the virtual assistant module and chat. In connection with the above, the website may use Cookies of the external providers listed above.",
+        "8": "The user may at any time view, block, or allow the use of Cookies, however, their absence may cause the website to operate incorrectly or limit the ability to use some of the functions offered.",
+        "9": "For statistical purposes, diagnosis of problems, analysis of violations and incidents, and in accordance with current legislation, the IN POL Platform collects and processes the IP addresses of users visiting the website and other data sent by the visitor's browser. Based on this data, it is possible to determine the type of access device, resolution, browser model or approximate information about the region from which the connection was made. These data are not disclosed to third parties with the exception of law enforcement agencies in case of ongoing investigations and offences.",
+        "10": "Personal data provided in the form are treated as confidential and are not visible to unauthorized persons.",
+        "11": "Data collected, may be processed by automated means but is not subject to profiling. The data processed is collected based on the expressed consent of the end user accepting this privacy policy.",
+        "12": "The processing of personal data is based on the consent given and obligations under current legislation.",
+        "13": "Personal data via the <b>inpol.mazowieckie.pl</b> Platform may be transferred to the competent office due to the implementation of the services available on the Platform.",
+        "14": "Personal data are not transferred to third countries or international organizations.",
+        "15": "Every data subject shall have the right of access, rectification, erasure or restriction of processing, the right to object, the right to lodge a complaint with a supervisory authority.",
+        "16": "Contact with the person supervising the processing of personal data is possible by e-mail at: iod@mazowieckie.pl",
+        "17": "Personal data may be made available to entities authorized under applicable law (e.g. law enforcement agencies).",
+        "18": "Deletion of personal data may be effected by withdrawal of consent or by filing a legally permissible objection to the processing of personal data.",
+        "19": "Any person has the right to lodge a complaint with the supervisory authority of the President of the Office for Personal Data Protection dealing with the protection of personal data if they consider that their personal data are processed in violation of the law.",
+        "Note": "This policy will be updated as needed and as changes occur.",
+        "LastUpdated": "Last updated 2021-07-20"
+      },
+      "Title": "Privacy policy",
+      "SubTitle": "Privacy policy and use of cookies",
+      "CloseBtn": "Close"
+    }
+  },
+  "Profile": {
+    "Header": "Profile",
+    "EditButton": "Edit",
+    "History": {
+      "Title": "History of account data changes",
+      "FieldName": "Field name",
+      "OldValue": "Old value",
+      "NewValue": "New value",
+      "ChangeDate": "Change date"
+    }
+  },
+  "TopMainMenu": {
+    "Register": "Sign Up",
+    "Login": "Login",
+    "Profile": "Profile",
+    "ChangePassword": "Change password",
+    "AccountHistory": "History of account data changes",
+    "Logout": "Logout",
+    "ProfileAriaLabel": "Profile options",
+    "LanguageAriaLabel": "Language selection",
+    "RegisterAriaLabel": "Registration and logging in"
+  },
+  "Login": {
+    "Login": "Login",
+    "Email": "Email",
+    "SignIn": "Sign In",
+    "CreateAcc": "Create an account",
+    "FailError": "Login failed",
+    "InvalidCredentials": "Incorrect email address and password ",
+    "LoginRequired": "Login is required",
+    "EmailRequired": "Email is required",
+    "ForgotPassword": "I forgot my password",
+    "CodeSMS": "Code sent by text message",
+    "CodeEmail": "Code sent by email",
+    "InsertCode": "Enter the code",
+    "CodeRequired": "Code is required",
+    "InvalidCode": "Invalid credential code",
+    "ExpiredCode": "The credential code has expired",
+    "TwoFAOtherError": "Failed to log in. Try again."
+  },
+  "Files": {
+    "Types": {
+      "1": "PDF",
+      "2": "PNG",
+      "3": "JPG",
+      "4": "DOCX",
+      "5": "Other"
+    },
+    "File": "File",
+    "Signature": "Signature",
+    "Type": "File type",
+    "UploadedBy": "Uploaded by",
+    "CreateDate": "Creation date",
+    "EditDate": "Modification date",
+    "NotExists": "File does not exist",
+    "List": "Files list"
+  },
+  "ResetPassword": {
+    "Header": "Reset password",
+    "Email": "Email",
+    "ResetPasswordButton": "Reset password",
+    "EmailRequired": "Email is required"
+  },
+  "ForgotPassword": {
+    "EmailSended": "An e-mail with a link to reset the password has been sent to the indicated e-mail address.",
+    "ResetWarrning": "No account is associated with the e-mail address provided.",
+    "ResetError": "An unknown error has occurred, please contact your administrator."
+  },
+  "EmailConfirmed": {
+    "Accepted": "The email has been confirmed, you will be redirected to the login page. If it does not happen automatically, click on",
+    "Link": "link."
+  },
+  "RelatedProceedingStatusType": {
+    "1": "Awaiting approval",
+    "2": "Accepted",
+    "3": "Rejected"
+  },
+  "RelatedReason": {
+    "1": "Family",
+    "2": "Child",
+    "3": "Parent",
+    "4": "Spouse"
+  },
+  "AccountFieldnames": {
+    "Firstname": "Firstname",
+    "FirstName": "Firstname",
+    "SecondName": "Second name",
+    "Surname": "Surname",
+    "PhoneNumber": "Phone number",
+    "Email": "E-mail",
+    "IdentityDocument": {
+      "IdentityDocumentType.Id": "Document type",
+      "TypeId": "Document type",
+      "DocumentNumber": "Document number",
+      "IssuanceCountryId": "Document country",
+      "IssuanceCountry.Id": "Document country"
+    },
+    "ContactDetails": {
+      "ResidenceAddress": {
+        "Province": "Residence address - Province",
+        "County": "Residence address - County",
+        "Community": "Residence address - Community",
+        "Locality": "Residence address - City",
+        "ZipCode": "Residence address - Zip code",
+        "Street": "Residence address - Street",
+        "HouseNumber": "Residence address - House number",
+        "ApartmentNumber": "Residence address - Apartment number"
+      },
+      "PostalAddress": {
+        "Province": "Postal address - Province",
+        "County": "Postal address - County",
+        "Community": "Postal address - Community",
+        "Locality": "Postal address - City",
+        "ZipCode": "Postal address - Zip code",
+        "Street": "Postal address - Street",
+        "HouseNumber": "Postal address - House number",
+        "ApartmentNumber": "Postal address - Apartment number"
+      }
+    },
+    "DateOfBirth": "Birth date",
+    "ProxyPersonField": "Proxy",
+    "ProxyPerson": {
+      "Name": "Proxy - Name",
+      "Surname": "Proxy - Surname",
+      "PhoneNumber": "Proxy - Phone number",
+      "EPuapAddress": "Proxy - Epuap address",
+      "PostalAddress": {
+        "Province": "Proxy - Postal address - Province",
+        "County": "Proxy - Postal address - County",
+        "Community": "Proxy - Postal address - Community",
+        "Locality": "Proxy - Postal address - City",
+        "ZipCode": "Proxy - Postal address - Zip code",
+        "Street": "Proxy - Postal address - Street",
+        "HouseNumber": "Proxy - Postal address - House number",
+        "ApartmentNumber": "Proxy - Postal address - Apartment number"
+      }
+    },
+    "Citizenship.Id": "Citizenship",
+    "HasProxy": "Has proxy"
+  },
+  "Reservations": {
+    "AlreadyTaken": "The selected date is not available",
+    "ChooseQueue": "Please select a queue",
+    "ChooseLocation": "Please select a location",
+    "MakeAppointment": "Book an appointment at the office",
+    "Name": "Name",
+    "LastName": "Surname",
+    "DateOfBirth": "Date of birth",
+    "TicketValue": "Ticket number",
+    "StartDate": "Start date and time",
+    "Appointment": "Appointment",
+    "NotPossible": "Please print the application, sign it and submit it in person at the office on ul. Marszałkowska 3/5 in Warsaw.",
+    "TypeI": "Please print the application, sign it and submit it in person at the office on ul. Marszałkowska 3/5 in Warsaw (you should take ticket with letter 'I')",
+    "TypeW": "Please print the application, sign it and submit it in person at the office on ul. Marszałkowska 3/5 in Warsaw (you should take ticket with letter 'W')",
+    "TypeX": "Complete the application in MOS - Case Management Module available at https://www.mos.cudzoziemcy.gov.pl",
+    "TypeF": "Complete the application in MOS - Case Management Module available at https://www.mos.cudzoziemcy.gov.pl",
+    "TypeG": "Complete the application in MOS - Case Management Module available at https://www.mos.cudzoziemcy.gov.pl",
+    "TypeS": "Complete the application in MOS - Case Management Module available at https://www.mos.cudzoziemcy.gov.pl",
+    "ConfirmDialog": {
+      "Title": "Confirmation",
+      "Message": "Do you confirm date of your appointment?",
+      "CancelBtn": "No",
+      "ConfirmBtn": "Yes"
+    }
+  },
+  "Dashboard": {
+    "ActiveCases": {
+      "Title": "My active cases",
+      "Signature": "Case number",
+      "Type": "Case type",
+      "Status": "Status",
+      "DecisionDate": "Decision date",
+      "SubmitDate": "Submit date",
+      "ForeignerFullName": "Person"
+    },
+    "RelatedCases": {
+      "Title": "Related active cases",
+      "Signature": "Case number",
+      "Person": "Person",
+      "Status": "Status",
+      "DecisionDate": "Deadline for decision",
+      "RelatedSignature": "Related to the case"
+    },
+    "FutureAppointments": {
+      "Title": "Scheduled visits to the office",
+      "StartDate": "Date",
+      "Signature": "Case number",
+      "QueueName": "Queue name",
+      "TicketValue": "Ticket number",
+      "OfficialAppointmentName": "Name",
+      "OfficialAppointmentPlace": "Place"
+    }
+  },
+  "Help": {
+    "Title": "Information pages",
+    "NoData": "No data",
+    "Files": "Files"
+  },
+  "CaseDetails": {
+    "Title": "Proceeding",
+    "DecisionDate": "Date of the decision",
+    "CreateDate": "Created at",
+    "GeneralInfo": "General information",
+    "CaseNumber": "Proceeding number",
+    "Description": "Description",
+    "Circumstance": "Circumstance",
+    "LastUpdated": "Updated at",
+    "DocumentNumber": "Document number",
+    "DocumentType": "Document type",
+    "RelatedDocuments": {
+      "Title": "Related documents",
+      "FileName": "Name",
+      "CreateDate": "Created at"
+    }
+  },
+  "AssignmentCode": {
+    "Button": "Add the registered case",
+    "Assign": "Assign",
+    "Code": "Assignment Code",
+    "Title": "Assign case",
+    "Error": "Code assignment error",
+    "Success": "Successfully assigned case"
+  },
+  "Pagination": {
+    "FirstPage": "First page",
+    "ItemsPerPage": "Items per page",
+    "LastPage": "Last page",
+    "NextPage": "Next page",
+    "PreviousPage": "Previous page",
+    "Of": "of"
+  },
+  "Cookie": {
+    "Message": "In order to provide services at the highest level, we use cookies. Using our website means that they will be stored on your device. You can change your browser settings at any time.",
+    "Dismiss": "Got it!",
+    "Link": "Learn more"
+  },
+  "CaseProxyInfo": {
+    "Proxies": "Proxies",
+    "FullName": "Full name",
+    "Address": "Address",
+    "Action": "Action",
+    "NoData": "No proxies",
+    "Add": "Add",
+    "ConfirmDialog": {
+      "Title": "Confirmation",
+      "Message": "Are you sure you want to remove the proxy?",
+      "CancelBtn": "No",
+      "ConfirmBtn": "Yes"
+    }
+  },
+  "ProxyPersonDialog": {
+    "Header": "Proxy",
+    "Name": "Name",
+    "Surname": "Surname",
+    "PhoneNumber": "Phone number",
+    "EpuapAddress": "ePUAP address"
+  },
+  "CaptchaDialog": {
+    "Header": "Captcha verification"
+  },
+  "2FA": {
+    "InvalidPhoneNumber": "Complete your phone number when editing your user profile or check it is correct.",
+    "Sending2FACode": "Sending the code..."
+  },
+  "Notification": {
+    "Subject": {
+      "Changes": "Case changes detected",
+      "Error": "Error occurred"
+    },
+    "Body": {
+      "Summary": "Summary",
+      "ChangesDetected": "change(s) detected",
+      "CaseDetails": "Case Details",
+      "CaseId": "Case ID",
+      "CaseType": "Type",
+      "Person": "Person",
+      "NoChanges": "(no changes)",
+      "Error": "Error",
+      "Time": "Time",
+      "Status": "Status",
+      "NewDocument": "New document",
+      "DateChange": "Date change",
+      "SentBy": "Sent by Inpol Monitor",
+      "Accounts": "Accounts"
+    },
+    "Error": {
+      "CheckFailed": "Check Failed",
+      "ErrorType": "Error Type",
+      "Message": "Message"
+    }
+  },
+  "Web": {
+    "Nav": {
+      "Snapshots": "Snapshots",
+      "Logout": "Logout",
+      "LoggedOut": "You have been logged out.",
+      "LoggedIn": "Welcome, {username}!",
+      "LanguageChanged": "Language changed to English",
+      "Login": "Login"
+    },
+    "Login": {
+      "Title": "Login",
+      "Username": "Username",
+      "Password": "Password",
+      "Submit": "Sign In",
+      "InvalidCredentials": "Invalid username or password.",
+      "PleaseEnter": "Please enter both username and password."
+    },
+    "Index": {
+      "Title": "Case Snapshots",
+      "Filter": "Filter Snapshots",
+      "ApplyFilters": "Apply Filters",
+      "NoFilters": "Clear Filters",
+      "Compare": "Compare Selected",
+      "Delete": "Delete Selected",
+      "DeleteConfirm": "Are you sure you want to delete the selected snapshots?",
+      "BackToSnapshots": "Back to Snapshots",
+      "Snapshots": "snapshot(s)"
+    },
+    "Compare": {
+      "Title": "Compare Snapshots",
+      "ShowChangesOnly": "Show changes only",
+      "Earlier": "Earlier Snapshot",
+      "Later": "Later Snapshot",
+      "Field": "Field",
+      "OldValue": "Earlier Value",
+      "NewValue": "Later Value",
+      "Print": "Print Comparison",
+      "Result": "Comparison"
+    },
+    "Table": {
+      "CaseId": "Case ID",
+      "Account": "Account",
+      "Endpoint": "Endpoint",
+      "Timestamp": "Timestamp",
+      "NoSnapshots": "No snapshots found."
+    },
+    "Messages": {
+      "SelectTwo": "Select exactly 2 snapshots of the same case",
+      "SelectMore": "Select 1 more snapshot from same case",
+      "SelectOnlyTwo": "Please select only 2 snapshots",
+      "ReadyCompare": "Ready to compare!",
+      "SelectSnapshots": "No snapshots selected for deletion.",
+      "ClearSelection": "Clear Selection",
+      "SelectAll": "Select/Deselect All",
+      "AllCases": "-- All Cases --",
+      "AllAccounts": "-- All Accounts --",
+      "AllSources": "-- All Sources --",
+      "NoResults": "No results found"
+    }
+  }
+}

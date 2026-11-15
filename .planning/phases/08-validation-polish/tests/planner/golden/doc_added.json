@@ -1,0 +1,11 @@
+{
+  "changed": true,
+  "detected_changes": [
+    {
+      "type": "new_document",
+      "old_value": null,
+      "new_value": "DecisionLetter.pdf",
+      "description": "New document added: DecisionLetter.pdf"
+    }
+  ]
+}
