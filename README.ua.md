@@ -369,6 +369,12 @@ JSON_LOGGING_ENABLED=true
 4. Протестуйте ручний запуск (`python -m src.orchestrator`)
 5. Перевірте Журнал подій Windows, якщо використовуєте Планувальник завдань
 
+Ваша підтримка розвитку цього інструменту дуже цінується - <a href="https://www.paypal.com/donate/?business=8JF7EPW5NWEJL&no_recurring=0&item_name=As+a+passionate+supporter+of+efficient+project+mgmt%2C+I%27ve+been+dedicated+to+creating+tools%2C+that+streamline+reporting+processes&currency_code=EUR" target="_blank">Пожертвувати</a><br/>
+
+Якщо вам корисний цей інструмент, будь ласка, розгляньте можливість участі в його подальшому вдосконаленні. Я буду радий будь-яким ідеям та пропозиціям щодо покращення рішення.<br/>
+
+Тестується під Windows 11 Home.
+
 ---
 
 *Останнє оновлення: 2026-07-15*

@@ -369,6 +369,12 @@ W przypadku pytań, problemów lub sugestii:
 4. Przetestuj ręczne uruchomienie (`python -m src.orchestrator`)
 5. Sprawdź Podgląd zdarzeń systemu Windows, jeśli używasz Harmonogramu zadań
 
+Twoje wsparcie dla rozwoju tego narzędzia jest bardzo doceniane - <a href="https://www.paypal.com/donate/?business=8JF7EPW5NWEJL&no_recurring=0&item_name=As+a+passionate+supporter+of+efficient+project+mgmt%2C+I%27ve+been+dedicated+to+creating+tools%2C+that+streamline+reporting+processes&currency_code=EUR" target="_blank">Przekaż darowiznę</a><br/>
+
+Jeśli narzędzie jest przydatne, rozważ wsparcie jego dalszego rozwoju. Z chęcią poznam wszelkie pomysły i sugestie dotyczące ulepszania rozwiązania.<br/>
+
+Testowane pod Windows 11 Home.
+
 ---
 
 *Ostatnia aktualizacja: 2026-07-15*
