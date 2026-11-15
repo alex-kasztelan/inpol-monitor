@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+
+{% macro format_value(val) %}
+    {% if val is none %}<span class="text-muted">(empty)</span>
+    {% elif val is mapping %}<pre class="mb-0 small">{{ val|tojson(indent=2) }}</pre>
+    {% elif val is iterable and val is not string %}
+        {% if val|length == 0 %}<span class="text-muted">(empty)</span>
+        {% else %}<pre class="mb-0 small">{{ val|tojson(indent=2) }}</pre>
+        {% endif %}
+    {% else %}{{ val }}{% endif %}
+{% endmacro %}
+
+{% macro format_question_row(field, q, changed_fields=None) %}
+    <strong>{{ field }}</strong><br>
+    {% if q.body %}<span class="text-truncate d-block" style="max-width: 300px;">{{ q.body[:100] }}{% if q.body|length > 100 %}...{% endif %}</span>{% endif %}
+{% endmacro %}
+
+{% block title %}{{ t('Web.Compare.Title', 'Compare Snapshots') }} - Inpol Monitor{% endblock %}
+
+{% block content %}
+<div class="no-print mb-3" id="topActions">
+    <a href="{{ url_for('web.index') }}" class="btn btn-outline-secondary">&larr; {{ t('Web.Index.BackToSnapshots', 'Back to Snapshots') }}</a>
+    <button class="btn btn-primary float-end" onclick="window.print()">{{ t('Web.Compare.Print', 'Print Comparison') }}</button>
+    <button type="button" class="btn btn-secondary" id="topBtn" style="display:none;">{{ t('Common.Top', 'Top') }}</button>
+</div>
+
+<h1 class="mb-4">{{ t('Web.Compare.Title', 'Snapshot Comparison') }}</h1>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h5 class="mb-0">{{ t('Cases.Signature', 'Case') }}: {{ case_id }}</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <h6 class="text-muted">{{ t('Web.Compare.Earlier', 'Earlier Snapshot') }}</h6>
+                <p><strong>ID:</strong> {{ snapshot1.id }}<br>
+                <strong>{{ t('Web.Table.Timestamp', 'Timestamp') }}:</strong> {{ snapshot1.timestamp.astimezone().strftime('%Y-%b-%d %H:%M') if snapshot1.timestamp else 'N/A' }}<br>
+                <strong>{{ t('Web.Table.Account', 'Account') }}:</strong> {{ snapshot1.account_id }}<br>
+                <strong>{{ t('Web.Table.Endpoint', 'Source') }}:</strong> {{ snapshot1.endpoint_type }}</p>
+            </div>
+            <div class="col-md-6">
+                <h6 class="text-muted">{{ t('Web.Compare.Later', 'Later Snapshot') }}</h6>
+                <p><strong>ID:</strong> {{ snapshot2.id }}<br>
+                <strong>{{ t('Web.Table.Timestamp', 'Timestamp') }}:</strong> {{ snapshot2.timestamp.astimezone().strftime('%Y-%b-%d %H:%M') if snapshot2.timestamp else 'N/A' }}<br>
+                <strong>{{ t('Web.Table.Account', 'Account') }}:</strong> {{ snapshot2.account_id }}<br>
+                <strong>{{ t('Web.Table.Endpoint', 'Source') }}:</strong> {{ snapshot2.endpoint_type }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 no-print" id="showChangesOnlyContainer">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="showChangesOnly">
+        <label class="form-check-label" for="showChangesOnly">{{ t('Web.Compare.ShowChangesOnly', 'Show only changes') }}</label>
+    </div>
+</div>
+
+<h2 class="mt-4 mb-3">{{ t('Web.Compare.Result', 'Comparison') }}</h2>
+
+{% if comparison %}
+<div class="table-responsive">
+    <table class="table table-bordered comparison-table" id="comparisonTable" style="table-layout: fixed;">
+        <thead class="table-secondary">
+            <tr>
+                <th style="width: 20%;">{{ t('Web.Compare.Field', 'Field') }}</th>
+                <th style="width: 40%;">{{ t('Web.Compare.OldValue', 'Earlier Value') }}</th>
+                <th style="width: 40%;">{{ t('Web.Compare.NewValue', 'Later Value') }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in comparison %}
+            <tr class="comparison-row" data-changed="{{ 'true' if item.changed else 'false' }}">
+                {% if item.is_question %}
+                <td class="{{ 'table-warning' if item.changed else '' }}"><strong>question</strong>
+                    <small class="text-muted">{{ item.field.split(':')[1][:8] }}...</small>
+                </td>
+                <td class="{{ 'table-warning' if item.changed else '' }}"><div class="value-cell">
+                    {% if item.old_value %}
+                    {% set q = item.old_value %}
+                    <strong>title:</strong> {{ q.title }}<br>
+                    <strong>status:</strong> {{ q.status }}<br>
+                    <strong>body:</strong> {{ q.body[:80] }}{% if q.body and q.body|length > 80 %}...{% endif %}<br>
+                    <strong>sentTime:</strong> {{ q.sentTime }}<br>
+                    <strong>answer:</strong> {{ q.answer[:80] if q.answer else '(none)' }}{% if q.answer and q.answer|length > 80 %}...{% endif %}<br>
+                    <strong>responseTime:</strong> {{ q.responseTime or '(none)' }}
+                    {% else %}<span class="text-muted">(not present)</span>{% endif %}
+                </div></td>
+                <td class="{{ 'table-warning' if item.changed else '' }}"><div class="value-cell">
+                    {% if item.new_value %}
+                    {% set q = item.new_value %}
+                    <strong>title:</strong> {{ q.title }}<br>
+                    <strong>status:</strong> {{ q.status }}<br>
+                    <strong>body:</strong> {{ q.body[:80] }}{% if q.body and q.body|length > 80 %}...{% endif %}<br>
+                    <strong>sentTime:</strong> {{ q.sentTime }}<br>
+                    <strong>answer:</strong> {{ q.answer[:80] if q.answer else '(none)' }}{% if q.answer and q.answer|length > 80 %}...{% endif %}<br>
+                    <strong>responseTime:</strong> {{ q.responseTime or '(none)' }}
+                    {% else %}<span class="text-muted">(not present)</span>{% endif %}
+                </div></td>
+                {% elif item.is_question_field %}
+                <td class="{{ 'table-warning' if item.changed else '' }}"><strong>{{ t('Cases.Question.FieldLabels.' + item.field_name, item.field_name) }}</strong>
+                    <small class="text-muted">{{ item.question_id[:8] }}...</small>
+                </td>
+                <td class="{{ 'table-warning' if item.changed else '' }}"><div class="value-cell">
+                    {% if item.old_label is defined and item.old_label %}{{ item.old_label }}
+                    {% elif item.old_value is not none %}{{ item.old_value }}
+                    {% else %}<span class="text-muted">(empty)</span>{% endif %}
+                </div></td>
+                <td class="{{ 'table-warning' if item.changed else '' }}"><div class="value-cell">
+                    {% if item.new_label is defined and item.new_label %}{{ item.new_label }}
+                    {% elif item.new_value is not none %}{{ item.new_value }}
+                    {% else %}<span class="text-muted">(empty)</span>{% endif %}
+                </div></td>
+                {% else %}
+                <td class="{{ 'table-warning' if item.changed else '' }}"><strong>{{ item.field }}</strong></td>
+                <td class="{{ 'table-warning' if item.changed else '' }}"><div class="value-cell">{{ format_value(item.old_value) }}</div></td>
+                <td class="{{ 'table-warning' if item.changed else '' }}"><div class="value-cell">{{ format_value(item.new_value) }}</div></td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="alert alert-success">
+    No data found in either snapshot.
+</div>
+{% endif %}
+
+<div class="mt-4 no-print" id="bottomBackBtn">
+    <a href="{{ url_for('web.index') }}" class="btn btn-outline-secondary">&larr; {{ t('Web.Index.BackToSnapshots', 'Back to Snapshots') }}</a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const showChangesOnly = document.getElementById('showChangesOnly');
+    const showChangesOnlyContainer = document.getElementById('showChangesOnlyContainer');
+    const rows = document.querySelectorAll('.comparison-row');
+    const storageKey = 'inpol_compare_show_changes';
+    
+    const savedState = localStorage.getItem(storageKey);
+    if (savedState !== null) {
+        showChangesOnly.checked = savedState === 'true';
+    } else {
+        showChangesOnly.checked = true;
+    }
+    
+    function applyFilter() {
+        const showOnly = showChangesOnly.checked;
+        localStorage.setItem(storageKey, showOnly);
+        
+        rows.forEach(row => {
+            if (showOnly) {
+                row.style.display = row.dataset.changed === 'true' ? '' : 'none';
+            } else {
+                row.style.display = '';
+            }
+        });
+    }
+    
+    showChangesOnly.addEventListener('change', applyFilter);
+    applyFilter();
+    
+    // Floating buttons logic
+    const topActions = document.getElementById('topActions');
+    const topBtn = document.getElementById('topBtn');
+    const bottomBackBtn = document.getElementById('bottomBackBtn');
+    
+    function updateFloatingButtons() {
+        const topActionsRect = topActions.getBoundingClientRect();
+        const isTopHidden = topActionsRect.top < -50;
+        
+        // Show/hide top button
+        if (topBtn) {
+            topBtn.style.display = isTopHidden ? 'inline-block' : 'none';
+        }
+        
+        // Make bottom back button floating when top hidden
+        if (bottomBackBtn) {
+            if (isTopHidden) {
+                bottomBackBtn.classList.add('floating-actions');
+            } else {
+                bottomBackBtn.classList.remove('floating-actions');
+            }
+        }
+    }
+    
+    window.addEventListener('scroll', updateFloatingButtons);
+    updateFloatingButtons();
+});
+</script>
+
+<style>
+.floating-actions {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+@media print {
+    .no-print { display: none !important; }
+    body { font-size: 11pt; }
+    .comparison-table { page-break-inside: avoid; }
+    .table-warning { background-color: #fff3cd !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+.comparison-table { table-layout: fixed; }
+.comparison-table th:first-child, .comparison-table td:first-child { word-wrap: normal; overflow-wrap: normal; white-space: nowrap; }
+.value-cell { word-wrap: break-word; overflow-wrap: break-word; white-space: normal; min-width: 0; }
+.field-changed { background-color: #fff3cd; padding: 1px 4px; border-radius: 2px; font-weight: 500; }
+.field-unchanged { padding: 1px 4px; }
+</style>
+{% endblock %}

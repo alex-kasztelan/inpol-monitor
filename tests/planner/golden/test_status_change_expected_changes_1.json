@@ -1,0 +1,14 @@
+[
+  {
+    "type": "status",
+    "old_value": "1",
+    "new_value": "2",
+    "description": "Status changed from '1 (New)' to '2 (In progress - signature assigned)'"
+  },
+  {
+    "type": "updated_at_change",
+    "old_value": "2025-01-01T00:00:00",
+    "new_value": "2025-01-02T00:00:00",
+    "description": "Updated at changed from 2025-01-01T00:00:00 to 2025-01-02T00:00:00"
+  }
+]

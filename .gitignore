@@ -1,3 +1,11 @@
+# Environment and credentials
+.env
+credentials.json
+# Database
+*.db
+# Logs
+*.log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -218,3 +226,23 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Virtual environments
+venv/
+env/
+ENV/
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+# OS
+.DS_Store
+Thumbs.db
+sampleQ*.json
+credentials.json.2.accounts
+credentials.json.test.1.account
+
+# Log archives
+logs/json_responses.log.*

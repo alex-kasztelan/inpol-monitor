@@ -1,0 +1,11 @@
+{
+  "changed": true,
+  "detected_changes": [
+    {
+      "type": "status",
+      "old_value": "1",
+      "new_value": "5",
+      "description": "Status changed from 1 to 5"
+    }
+  ]
+}

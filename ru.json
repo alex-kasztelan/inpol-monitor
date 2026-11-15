@@ -1,0 +1,696 @@
+﻿{
+  "Cases": {
+    "Title": "Список дел",
+    "New": "Подать новую заявку",
+    "States": {
+      "1": "новый",
+      "2": "в ходе - приписано номер дела",
+      "3": "в ходе - вызов на дополнение формальных недостатков",
+      "4": "в ходе",
+      "5": "в ходе",
+      "6": "в ходе",
+      "7": "в ходе - вторaя инстанция",
+      "8": "в ходе",
+      "9": "в ходе",
+      "10": "Решение подписано",
+      "11": "Решение подписано",
+      "12": "Решение подписано",
+      "13": "выдача документов",
+      "14": "Законченный",
+      "15": "Законченный",
+      "16": "Законченный",
+      "17": "Законченный",
+      "18": "Законченный",
+      "19": "Законченный",
+      "20": "Досье на заем",
+      "21": "приостановленный",
+      "22": "Мнение доставлено"
+    },
+    "MakeApplication": "Подать заявку",
+    "Group": {
+      "LegalizationOfStay": "Легализация пребывания - Подавайте заявление в MOS",
+      "IssueAndExchangeOfDocuments": "Выдача и обмен документами",
+      "Visas": "Визы",
+      "Citizenship": "Гражданство",
+      "Other": "Другой"
+    },
+    "Type": "Тип случая",
+    "Person": "Человек",
+    "Status": "Статус",
+    "CreationDate": "Дата создания",
+    "FileName": "Имя файла",
+    "UploadedBy": "Загружено пользователем",
+    "ModificationDate": "Дата модификации",
+    "NoData": "Нет данных",
+    "Signature": "Номер дела",
+    "Circumstances": {
+      "ChooseCircumstance": "Выберите обстоятельства",
+      "GoBackBtn": "Назад",
+      "EnterCircumstance": "Введите обстоятельства",
+      "DifferentCircumstance": "Другое обстоятельство",
+      "ChooseCircumstanceBtn": "выбирать"
+    },
+    "FilesRequest": {
+      "Title": "Запрос на доступ к файлам",
+      "Date": "Дата подачи заявки",
+      "Status": "Статус приложения",
+      "Statusses": {
+        "2": "Отправлен запрос на доступ к материалам дела. Заявки обрабатываются в том порядке, в котором они были отправлены. Подождите, пока вас проинформируют о времени, когда вы сможете ознакомиться с материалами дела.",
+        "5": "Файл недоступен",
+        "6": "Файлы готовы к проверке"
+      },
+      "SencFilesAccessRequestBtn": "Подать заявку на доступ к файлам",
+      "SencFilesAccessRequest": {
+        "Title": "Приложение для доступа к файлам",
+        "CaseNumber": "Номер дела:",
+        "Reason": "Причина",
+        "SaveBtn": "Сохранять"
+      }
+    },
+    "SuccessfullyGenerated": "Заявка успешно создана",
+    "SubmitApplicationReminder": "Формирование заявки не является подтверждением ее подачи. Распечатайте заявление и приложения (если требуется) и подпишите. Затем запишитесь на прием в офис для подачи заявления.",
+    "AddAttachmentsToCase": "Добавить вложения к делу",
+    "SelectFileToUpload": "Выберите файл",
+    "SendFileToUpload": "Отправить выбранный файл",
+    "FileUploadTitle": "Послать файл",
+    "SelectedFileToUpload": "Ты выбрал",
+    "UploadedFiles": "послал:",
+    "DownloadTemplate": "(Скачать шаблон)",
+    "DownloadApplicationFile": "Скачать приложение pdf",
+    "MakeAppointmentAtOffice": "Назначить встречу в офисе",
+    "DocumentTemplatesAvailable": "Доступны шаблоны документов",
+    "ReturnToCasesList": "Заканчивать",
+    "BringDocumentPersonally": "Документ необходимо подготовить и доставить в офис лично",
+    "SuccessTitle": "было успешно создано",
+    "BindRelated": "Привязать кейс",
+    "DeadlineForDecision": "Срок принятия решения",
+    "Reason": "Причина",
+    "RelatedCases": "Связанные случаи",
+    "BindCase": "Случай ссылки",
+    "RelatedComplete": "Связанный",
+    "RelatedError": "При связывании обращения возникла проблема",
+    "AlreadyRelated": "Уже есть запрос на привязку этих проблем в системе ",
+    "NotExists": "В системе нет дела с номером ",
+    "FileTooLarge": "Файл слишком большой!",
+    "FilesLimitReached": "Достигнуто количество вложений.",
+    "FillApplication": "Заполните заявку",
+    "SubmitApplication": "Подать заявку",
+    "GenerateApplicationBtn": "Создать заявку",
+    "Errors": {
+      "Label": "Ошибки:",
+      "RequiredField": "Обязательное поле",
+      "MinimumValue": "Минимальное значение ",
+      "MaximumValue": "Максимальное значение ",
+      "WrongFormat": "Значение имеет недопустимый формат",
+      "OneOf": "Вы должны выбрать один",
+      "FewOf": "Вы должны выбрать хотя бы один",
+      "FileLimit": "Достигнуто максимальное количество файлов",
+      "EmptyIf": "поле должно быть пустым"
+    },
+    "TimelineEventTypes": {
+      "Created": "Заполнение заявки",
+      "MeetingScheduled": "Встреча в офисе",
+      "ActivityCreated": "Добавление активности",
+      "CorrespondenceSent": "Доставка корреспонденции",
+      "CorrespondenceReceived": "Получение корреспонденции",
+      "ProceedingRelationAccepted": "принятие отношения Трудов",
+      "ProceedingRelationRejected": "отвержение отношения Трудов",
+      "AppointmentMade": "Посещение офиса",
+      "ProceedingRelationDeleted": "Связь с делом удалена",
+      "ProceedingRelationWithDeleted": "Ссылка на дело удалена ",
+      "AddProxyPerson": "Добавление прокси",
+      "RemoveProxyPerson": "Удаление прокси",
+      "UpdateProxyPerson": "Обновление прокси"
+    },
+    "Timeline": "График",
+    "CancelCreatingProceeding": "Скасувати додавання справи",
+    "ConfirmCancelCreatingProceeding": "Ви впевнені, що хочете скасувати додавання справи?",
+    "PayRedirectBtn": "Оплатить гербовый сбор",
+    "NoPaymentLink": "Ошибка при загрузке платежной ссылки",
+    "Question": {
+      "Error": {
+        "Default": "Поле было заполнено неправильно",
+        "Title": {
+          "Required": "Название обязательно"
+        },
+        "Content": {
+          "Required": "Содержание является обязательным",
+          "MaxLength": "Содержание не может превышать 1500 символов"
+        }
+      },
+      "Dialog": {
+        "Add": "Добавить вопрос",
+        "Header": "Задайте вопрос",
+        "DetailsHeader": "детали вопроса",
+        "Close": "Закрой его",
+        "Send": "Отправлять",
+        "SuccessAlert": "Успешно завершено",
+        "FailAlert": "Произошла ошибка. Пожалуйста, повторите попытку позже"
+      },
+      "ProceedingSignature": "Ускорение выпуска карты",
+      "Title": "Заголовок",
+      "Content": "Содержание",
+      "Titles": {
+        "1": "Недостающие документы",
+        "2": "Доверенность",
+        "3": "Выдача сертификата",
+        "4": "Рассмотрение материалов дела",
+        "5": "Ускорить выдачу решения",
+        "6": "Ускорение выпуска карты",
+        "7": "Другая"
+      },
+      "ProceedingType": "Тип обработки",
+      "Questions": "Вопросы",
+      "CreatedDate": "Созданный",
+      "Status": "Статус",
+      "Add": "Добавить вопрос",
+      "Statuses": {
+        "1": "В ожидании ответа",
+        "2": "Отвечать"
+      },
+      "Response": "Ответ",
+      "QuestionContent": "Содержание вопроса",
+      "ResponseContent": "Содержание ответа"
+    }
+  },
+  "ProceedingQuestions": {
+    "Questions": "Вопросы",
+    "Title": "Заголовок",
+    "CreatedDate": "Созданный",
+    "Status": "Статус",
+    "Add": " ",
+    "Statuses": {
+      "1": "",
+      "2": ""
+    }
+  },
+  "CaseRelatedDialog": {
+    "ApproveQuestion": "Вы уверены, что хотите связать футляр своей подписью "
+  },
+  "ProceedingsState": {
+    "Nowa": "новый",
+    "W toku": "в ходе",
+    "W toku - nadana sygnatura": "в ходе - приписано номер дела",
+    "W toku - wezwanie o braki formalne": "в ходе - вызов на дополнение формальных недостатков",
+    "W toku - II instancja": "в ходе - вторaя инстанция",
+    "Decyzja podpisana": "Решение подписано",
+    "Dokumenty do odbioru": "выдача документов",
+    "Zakończona": "Законченный",
+    "Zawieszona": "приостановленный"
+  },
+  "ChangePassword": {
+    "Header": "Изменение пароля",
+    "OldPassword": "Предыдущий пароль",
+    "NewPassword": "Новый пароль",
+    "RemindPasswordButton": "Изменять",
+    "SuccessMessage": "Пароль изменен правильно",
+    "FailureMessage": "Ошибка смены пароля"
+  },
+  "Common": {
+    "Top": "Вверх",
+    "Yes": "да",
+    "No": "Нет",
+    "Search": "Поиск",
+    "Added": "Добавлен",
+    "Deleted": "Удаленный",
+    "Choose": "выберите",
+    "Password": "пароль",
+    "PhoneNumber": "Номер телефона",
+    "PasswordRequired": "Необходим пароль",
+    "InvalidPassword": "Неверный пароль",
+    "RepeatPassword": "Повторить пароль",
+    "RepeatPasswordFail": "Вы должны повторить свой пароль",
+    "NotSamePasswords": "Пароли не соответствуют",
+    "FailError": "Ошибка",
+    "FieldIsRequired": "Поле обязательно для заполнения",
+    "Confirm": "Подтверждать",
+    "Document": {
+      "Name": "Документ, удостоверяющий личность",
+      "TemporaryID": "Временный документ, удостоверяющий личность",
+      "Passport": "Заграничный пасспорт",
+      "ResidenceCard": "Резидентская карточка"
+    },
+    "Address": {
+      "Province": "Воеводство",
+      "County": "Округ",
+      "Commune": "Муниципалитет",
+      "City": "Город",
+      "ZipCode": "Почтовый индекс",
+      "Street": "Улица",
+      "StreetNumber": "Номер дома",
+      "ApartmentNumber": "Номер квартиры"
+    },
+    "Email": "Эл. адрес",
+    "EPUAPBoxAddress": "адрес почтового ящика EPUAP",
+    "PersonalSection": {
+      "Header": "Личная информация",
+      "Surname": "Фамилия",
+      "Name": "Имя",
+      "SecondName": "Второе имя",
+      "SeriesAndNumber": "Серия и номер документа",
+      "IDCountryInfo": "Страна, где был выдан документ",
+      "BirthDate": "Дата рождения",
+      "Citizenship": "Гражданство",
+      "SaveSuccess": "Изменение данных сохранено"
+    },
+    "ContactData": {
+      "Header": "Контактные данные",
+      "PolishAddressSectionHeader": "Адрес фактического проживания",
+      "CorrespondenceSectionHeader": "Адрес для корреспонденции",
+      "SameAddress": "Адрес, тот же, что и адрес фактического проживания",
+      "CopyAddress": "Скопируй адрес"
+    },
+    "ProxyData": {
+      "Header": "данные уполномоченного лица",
+      "HaveProxy": "У меня есть прокси",
+      "Name": "Имя",
+      "Surname": "Фамилия"
+    },
+    "PasswordStrength": {
+      "LowerCaseCriteriaMsg": "Содержит хотя бы один нижний символ",
+      "UpperCaseCriteriaMsg": "Содержит хотя бы один верхний символ",
+      "DigitsCriteriaMsg": "Содержит как минимум одну цифру",
+      "SpecialCharsCriteriaMsg": "Содержит хотя бы один специальный символ",
+      "MinCharsCriteriaMsg": "Содержит не менее 8 символов"
+    },
+    "SaveButton": "Сохранять",
+    "Close": "Закрывать",
+    "UnknownError": "Неизвестная ошибка",
+    "Validators": {
+      "FieldRequired": "Обязательное поле!",
+      "FieldTooShort": "Слишком короткое описание!",
+      "FieldTooLong": "Описание слишком длинное!",
+      "FieldInvalid": "Описание должно быть на польском языке!"
+    },
+    "Cancel": "Отмена",
+    "Verify": "Проверить",
+    "twoFAMethod": "Способ получения сертификата",
+    "InvalidCaptcha": "Система обнаружила подозрительное поведение. Попробуйте еще раз"
+  },
+  "Table": {
+    "Type": "Тип случая",
+    "Person": "Человек",
+    "Status": "Статус",
+    "CreationDate": "Дата создания",
+    "FileName": "Имя файла",
+    "UploadedBy": "Загружено пользователем",
+    "ModificationDate": "Дата модификации",
+    "NoData": "Нет данных",
+    "Signature": "Номер дела",
+    "EndDate": "Дата окончания",
+    "StartDate": "Дата начала",
+    "FilterBtn": "Фильтр",
+    "NoFilters": "Без фильтров",
+    "Filters": "Фильтры",
+    "Dates": {
+      "From": "Из: ",
+      "To": "Вниз: ",
+      "Exact": "Дата: "
+    }
+  },
+  "SideMenu": {
+    "Home": "Главная",
+    "Cases": "Стадия рассмотрения дела",
+    "Files": "Ссылки",
+    "Help": "Помощь",
+    "AriaLabel": "Боковое меню"
+  },
+  "Register": {
+    "Header": "Регистрация",
+    "LoginSection": {
+      "Header": "Данные входа"
+    },
+    "RegisterButton": "Зарегистрироваться",
+    "SuccessMessage": "Аккаунт успешно создан. Ссылка для подтверждения адреса была отправлена ​​на указанный адрес электронной почты.",
+    "EmailAlreadyInUseError": "Указанный адрес электронной почты уже занят.",
+    "RegistrationError": "Произошла неизвестная ошибка. Обратитесь к администратору.",
+    "ConfirmCancelMessage": "Вы уверены, что хотите отменить регистрацию?",
+    "Terms": {
+      "Formula": {
+        "IAccept": "Я согласен ",
+        "Terms": "условия и положения. "
+      },
+      "Title": "Условия и положения",
+      "CloseBtn": "Закрывать"
+    },
+    "PrivacyPolicy": {
+      "CloseBtn": "Закрывать",
+      "Formula": {
+        "IAccept": "Я согласен ",
+        "PrivacyPolicy": "политика конфиденциальности. "
+      },
+      "Title": "Политика конфиденциальности"
+    }
+  },
+  "Profile": {
+    "Header": "Профиль",
+    "EditButton": "Редактировать",
+    "History": {
+      "Title": "История изменения данных аккаунта",
+      "FieldName": "Имя поля",
+      "OldValue": "Старое значение",
+      "NewValue": "Новое значение",
+      "ChangeDate": "дата изменения"
+    }
+  },
+  "TopMainMenu": {
+    "Register": "Подписаться",
+    "Login": "Авторизоваться",
+    "Profile": "Профиль",
+    "ChangePassword": "Измени пароль",
+    "AccountHistory": "История изменения данных",
+    "Logout": "Выйти",
+    "ProfileAriaLabel": "Параметры профиля",
+    "LanguageAriaLabel": "Выбор языка",
+    "RegisterAriaLabel": "Регистрация и вход"
+  },
+  "Login": {
+    "Login": "Авторизоваться",
+    "Email": "Эл. почта",
+    "SignIn": "Войти в систему",
+    "CreateAcc": "Завести аккаунт",
+    "FailError": "Ошибка входа",
+    "LoginRequired": "Требуется логин",
+    "EmailRequired": "Электронная почта требуется",
+    "ForgotPassword": "я забыл мой пароль",
+    "InvalidCredentials": "Неверный адрес электронной почты и пароль",
+    "CodeSMS": "Код отправлен в текстовом сообщении",
+    "CodeEmail": "Код отправлен по электронной почте",
+    "InsertCode": "введите код",
+    "CodeRequired": "Необхідний код",
+    "InvalidCode": "Неверный код учетной записи",
+    "ExpiredCode": "Срок действия учетного кода истек",
+    "TwoFAOtherError": "Не удалось войти. Попробуйте еще раз."
+  },
+  "Files": {
+    "Types": {
+      "1": "PDF",
+      "2": "PNG",
+      "3": "JPG",
+      "4": "DOCX",
+      "5": "Разные"
+    },
+    "File": "Файл",
+    "Signature": "Подпись",
+    "Type": "Тип файла",
+    "UploadedBy": "Загрузил",
+    "CreateDate": "Дата создания",
+    "EditDate": "Дата модификации",
+    "NotExists": "Файл не существует",
+    "List": "Список файлов"
+  },
+  "ResetPassword": {
+    "Header": "Сброс пароля",
+    "Email": "Электронное письмо",
+    "ResetPasswordButton": "Сброс пароля",
+    "EmailRequired": "Электронная почта обязательна"
+  },
+  "ForgotPassword": {
+    "EmailSended": "На указанный адрес электронной почты было отправлено письмо со ссылкой для сброса пароля.",
+    "ResetWarrning": "С указанным адресом электронной почты не связана никакая учетная запись.",
+    "ResetError": "Произошла неизвестная ошибка, обратитесь к администратору."
+  },
+  "EmailConfirmed": {
+    "Accepted": "Электронная почта подтверждена, вы будете перенаправлены на страницу входа. Если этого не произошло автоматически, нажмите",
+    "Link": "link."
+  },
+  "RelatedProceedingStatusType": {
+    "1": "В ожидании подтверждения",
+    "2": "Принято",
+    "3": "Отклоненный"
+  },
+  "RelatedReason": {
+    "1": "семья",
+    "2": "ребенок",
+    "3": "родитель",
+    "4": "супруг"
+  },
+  "AccountFieldnames": {
+    "Firstname": "Имя",
+    "FirstName": "Имя",
+    "SecondName": "Второе имя",
+    "Surname": "Фамилия",
+    "PhoneNumber": "Телефонный номер",
+    "Email": "Электронное письмо",
+    "IdentityDocument": {
+      "IdentityDocumentType.Id": "Тип документа",
+      "TypeId": "Тип документа",
+      "DocumentNumber": "Номер документа",
+      "IssuanceCountryId": "Страна выдачи",
+      "IssuanceCountry.Id": "Страна выдачи"
+    },
+    "ContactDetails": {
+      "ResidenceAddress": {
+        "Province": "Адрес места проживания - Воеводство",
+        "County": "Адрес места проживания - округ",
+        "Community": "Адрес места проживания - Сообщество",
+        "Locality": "Адрес места проживания - Город",
+        "ZipCode": "Адрес места проживания - почтовый индекс",
+        "Street": "Адрес места проживания - улица",
+        "HouseNumber": "Адрес места проживания - номер дома",
+        "ApartmentNumber": "Адрес места проживания - Номер квартиры"
+      },
+      "PostalAddress": {
+        "Province": "почтовый адрес - Воеводство",
+        "County": "почтовый адрес - округ",
+        "Community": "почтовый адрес - Сообщество",
+        "Locality": "почтовый адрес - Город",
+        "ZipCode": "почтовый адрес - почтовый индекс",
+        "Street": "почтовый адрес - улица",
+        "HouseNumber": "почтовый адрес - номер дома",
+        "ApartmentNumber": "почтовый адрес - Номер квартиры"
+      }
+    },
+    "DateOfBirth": "Дата рождения",
+    "ProxyPersonField": "Прокси",
+    "ProxyPerson": {
+      "Name": "Прокси - Имя",
+      "Surname": "Прокси - Фамилия",
+      "PhoneNumber": "Прокси - Телефонный номер",
+      "EPuapAddress": "Прокси - Адрес epuap",
+      "PostalAddress": {
+        "Province": "Прокси - почтовый адрес - Воеводство",
+        "County": "Прокси - почтовый адрес - округ",
+        "Community": "Прокси - почтовый адрес - Сообщество",
+        "Locality": "Прокси - почтовый адрес - Город",
+        "ZipCode": "Прокси - почтовый адрес - почтовый индекс",
+        "Street": "Прокси - почтовый адрес - улица",
+        "HouseNumber": "Прокси - почтовый адрес - номер дома",
+        "ApartmentNumber": "Прокси - почтовый адрес - Номер квартиры"
+      }
+    },
+    "Citizenship.Id": "Гражданство",
+    "HasProxy": "Есть поверенный"
+  },
+  "Reservations": {
+    "AlreadyTaken": "Выбранная дата недоступна",
+    "ChooseQueue": "Пожалуйста, выберите очередь",
+    "ChooseLocation": "Пожалуйста, выберите место",
+    "MakeAppointment": "Записаться на прием в офисе",
+    "Name": "Имя",
+    "LastName": "Фамилия",
+    "DateOfBirth": "Дата рождения",
+    "TicketValue": "Номер билета",
+    "StartDate": "Дата и время начала",
+    "Appointment": "встреча",
+    "NotPossible": "Распечатайте заявление, подпишите и отправьте лично в офис по ул. Маршалковская 3/5 в Варшаве.",
+    "TypeI": "Распечатайте заявление, подпишите и отправьте лично в офис по ул. Маршалковская 3/5 в Варшаве (вы должны изучить число с буквой 'I')",
+    "TypeW": "Распечатайте заявление, подпишите и отправьте лично в офис по ул. Маршалковская 3/5 в Варшаве (вы должны изучить число с буквой 'W')",
+    "TypeX": "Заполните заявку в модуле управления делами MOS, доступном по адресу https://www.mos.cudzoziemcy.gov.pl",
+    "TypeF": "Заполните заявку в модуле управления делами MOS, доступном по адресу https://www.mos.cudzoziemcy.gov.pl",
+    "TypeG": "Заполните заявку в модуле управления делами MOS, доступном по адресу https://www.mos.cudzoziemcy.gov.pl",
+    "TypeS": "Заполните заявку в модуле управления делами MOS, доступном по адресу https://www.mos.cudzoziemcy.gov.pl",
+    "ConfirmDialog": {
+      "Title": "Подтверждение",
+      "Message": "Вы подтверждаете дату визита?",
+      "CancelBtn": "Нет",
+      "ConfirmBtn": "да"
+    }
+  },
+  "Dashboard": {
+    "ActiveCases": {
+      "Title": "Мои активные дела",
+      "Signature": "номер дела",
+      "Type": "тип случая",
+      "Status": "статус",
+      "DecisionDate": "Срок принятия решения",
+      "SubmitDate": "Дата подачи",
+      "ForeignerFullName": "человек",
+      "RelatedSignature": "Относится к делу"
+    },
+    "RelatedCases": {
+      "Title": "Связанные активные дела",
+      "Signature": "Номер дела",
+      "Person": "Человек",
+      "Status": "Статус",
+      "DecisionDate": "Срок вынесения решения"
+    },
+    "FutureAppointments": {
+      "Title": "Плановые визиты в офис",
+      "StartDate": "Дата",
+      "Signature": "Номер дела",
+      "QueueName": "Имя очереди",
+      "TicketValue": "Номер билета",
+      "OfficialAppointmentName": "Имя",
+      "OfficialAppointmentPlace": "Место"
+    }
+  },
+  "Help": {
+    "Title": "Информационные страницы",
+    "NoData": "Нет данных",
+    "Files": "Файлы"
+  },
+  "CaseDetails": {
+    "Title": "Процедура",
+    "DecisionDate": "Дата принятия решения",
+    "CreateDate": "Созданный",
+    "GeneralInfo": "Основная информация",
+    "CaseNumber": "Номер дела",
+    "Description": "Описание",
+    "Circumstance": "Факт",
+    "LastUpdated": "Обновлять",
+    "DocumentNumber": "Номер документа",
+    "DocumentType": "Тип документа",
+    "RelatedDocuments": {
+      "Title": "Связанные документы",
+      "FileName": "Имя",
+      "CreateDate": "Созданный"
+    }
+  },
+  "AssignmentCode": {
+    "Button": "Добавить установленный случай",
+    "Assign": "назначатьn",
+    "Code": "Код присвоения",
+    "Title": "Назначить дело",
+    "Error": "Ошибка присвоения кода",
+    "Success": "Успешно назначенное дело"
+  },
+  "Pagination": {
+    "FirstPage": "Первая страница",
+    "ItemsPerPage": "пункты на странице",
+    "LastPage": "Последняя страница",
+    "NextPage": "Следующая страница",
+    "PreviousPage": "Предыдущая страница",
+    "Of": "из"
+  },
+  "Cookie": {
+    "Message": "Чтобы предоставлять услуги на самом высоком уровне, мы используем файлы cookie. Использование нашего веб-сайта означает, что они будут храниться на вашем устройстве. Вы можете изменить настройки своего браузера в любое время.",
+    "Dismiss": "Понятно!",
+    "Link": "Учить больше"
+  },
+  "CaseProxyInfo": {
+    "Proxies": "Агенты",
+    "FullName": "Имя и фамилия",
+    "Address": "Адрес",
+    "Action": "доля",
+    "NoData": "Без прокси",
+    "Add": "Добавлять",
+    "ConfirmDialog": {
+      "Title": "Подтверждение",
+      "Message": "Вы уверены, что хотите удалить делегата?",
+      "CancelBtn": "Нет",
+      "ConfirmBtn": "да"
+    }
+  },
+  "ProxyPersonDialog": {
+    "Header": "Прокси",
+    "Name": "Имя",
+    "Surname": "Имя",
+    "PhoneNumber": "Телефонный номер",
+    "EpuapAddress": "Адрес ePUAP"
+  },
+  "CaptchaDialog": {
+    "Header": "Проверка CAPTCHA"
+  },
+  "2FA": {
+    "InvalidPhoneNumber": "Введите свой номер телефона при редактировании профиля пользователя или проверьте его правильность.",
+    "Sending2FACode": "Я отправляю код..."
+  },
+  "Notification": {
+    "Subject": {
+      "Changes": "Обнаружены изменения",
+      "Error": "Произошла ошибка"
+    },
+    "Body": {
+      "Summary": "Сводка",
+      "ChangesDetected": "изменений",
+      "CaseDetails": "Детали дела",
+      "CaseId": "Номер дела",
+      "CaseType": "Тип",
+      "Person": "Лицо",
+      "NoChanges": "(нет изменений)",
+      "Error": "Ошибка",
+      "Time": "Время",
+      "Status": "Статус",
+      "NewDocument": "Новый документ",
+      "DateChange": "Изменение даты",
+      "SentBy": "Отправлено Inpol Monitor",
+      "Accounts": "Аккаунты"
+    },
+    "Error": {
+      "CheckFailed": "Проверка не удалась",
+      "ErrorType": "Тип ошибки",
+      "Message": "Сообщение"
+    }
+  },
+  "Web": {
+    "Nav": {
+      "Snapshots": "Снимки",
+      "Logout": "Выйти",
+      "LoggedOut": "Вы вышли из системы.",
+      "LoggedIn": "Добро пожаловать, {username}!",
+      "LanguageChanged": "Язык изменен на Русский",
+      "Login": "Войти"
+    },
+    "Login": {
+      "Title": "Вход",
+      "Username": "Имя пользователя",
+      "Password": "Пароль",
+      "Submit": "Войти",
+      "InvalidCredentials": "Неверное имя пользователя или пароль.",
+      "PleaseEnter": "Введите имя пользователя и пароль."
+    },
+    "Index": {
+      "Title": "Снимки дел",
+      "Filter": "Фильтровать снимки",
+      "ApplyFilters": "Применить фильтры",
+      "NoFilters": "Очистить фильтры",
+      "Compare": "Сравнить выбранные",
+      "Delete": "Удалить выбранные",
+      "DeleteConfirm": "Вы уверены, что хотите удалить выбранные снимки?",
+      "BackToSnapshots": "Назад к снимкам",
+      "Snapshots": "снимк(ов)"
+    },
+"Compare": {
+      "Title": "Сравнение снимков",
+      "ShowChangesOnly": "Показать только изменения",
+      "Earlier": "Ранний снимок",
+      "Later": "Поздний снимок",
+      "Field": "Поле",
+      "OldValue": "Раннее значение",
+      "NewValue": "Позднее значение",
+      "Print": "Печать сравнения",
+      "Result": "Сравнение"
+    },
+    "Table": {
+      "CaseId": "Номер дела",
+      "Account": "Аккаунт",
+      "Endpoint": "Конечная точка",
+      "Timestamp": "Временная метка",
+      "NoSnapshots": "Снимки не найдены."
+    },
+    "Messages": {
+      "SelectTwo": "Выберите ровно 2 снимка того же дела для сравнения",
+      "SelectMore": "Выберите еще 1 снимок того же дела",
+      "SelectOnlyTwo": "Выберите только 2 снимка",
+      "ReadyCompare": "Готово к сравнению!",
+      "SelectSnapshots": "Не выбраны снимки для удаления.",
+      "ClearSelection": "Очистить выбор",
+      "SelectAll": "Выбрать/Снять выбор",
+      "AllCases": "-- Все дела --",
+      "AllAccounts": "-- Все аккаунты --",
+      "AllSources": "-- Все источники --",
+      "NoResults": "Результатов нет"
+    }
+  }
+}
