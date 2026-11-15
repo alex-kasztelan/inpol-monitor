@@ -369,6 +369,12 @@ For issues, questions, or feature requests:
 4. Test manual execution (`python -m src.orchestrator`)
 5. Check Windows Event Viewer if using Task Scheduler
 
+Your support for the development of this tool is greatly appreciated - <a href="https://www.paypal.com/donate/?business=8JF7EPW5NWEJL&no_recurring=0&item_name=As+a+passionate+supporter+of+efficient+project+mgmt%2C+I%27ve+been+dedicated+to+creating+tools%2C+that+streamline+reporting+processes&currency_code=EUR" target="_blank">Donate</a><br/>
+
+If you find the tool useful, please consider contributing to its further improvement. I welcome any ideas or suggestions for enhancing the solution.<br/>
+
+Tested under Windows 11 Home version.
+
 ---
 
 *Last updated: 2026-07-15*
