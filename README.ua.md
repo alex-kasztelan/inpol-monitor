@@ -40,7 +40,7 @@ Inpol Monitor відстежує імміграційні справи на кі
 
 1. **Клонування та налаштування**
    ```bash
-   git clone https://github.com/your-repo/inpol-monitor.git
+   git clone https://github.com/alex-kasztelan/inpol-monitor.git
    cd inpol-monitor
    python -m venv .venv
    .venv\Scripts\activate  # Windows
