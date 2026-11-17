@@ -2,7 +2,7 @@
 
 Detailed interaction diagrams grounded in the actual codebase. All flows are derived from the implementation in `src/`, `.planning/`, and the application architecture.
 
-Available translations: [English](SYSTEM_INTERACTIONS.md) | [Polski](../pl/system-interactions/SYSTEM_INTERACTIONS.md) | [Русский](../ru/system-interactions/SYSTEM_INTERACTIONS.md) | [Українська](../ua/system-interactions/SYSTEM_INTERACTIONS.md)
+Available translations: [English](SYSTEM_INTERACTIONS.md) | [Polski](../../pl/system-interactions/SYSTEM_INTERACTIONS.md) | [Русский](../../ru/system-interactions/SYSTEM_INTERACTIONS.md) | [Українська](../../ua/system-interactions/SYSTEM_INTERACTIONS.md)
 
 ---
 

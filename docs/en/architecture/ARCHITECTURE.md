@@ -2,7 +2,7 @@
 
 This document provides architectural component diagrams and interaction diagrams for the Inpol Monitor project. Diagrams use Mermaid syntax and render in GitHub, GitLab, VS Code, and any Mermaid-compatible viewer.
 
-Available translations: [English](ARCHITECTURE.md) | [Polski](../pl/architecture/ARCHITECTURE.md) | [Русский](../ru/architecture/ARCHITECTURE.md) | [Українська](../ua/architecture/ARCHITECTURE.md)
+Available translations: [English](ARCHITECTURE.md) | [Polski](../../pl/architecture/ARCHITECTURE.md) | [Русский](../../ru/architecture/ARCHITECTURE.md) | [Українська](../../ua/architecture/ARCHITECTURE.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 Детальні діаграми взаємодій, засновані на реальній базі коду. Усі потоки отримано з реалізації в `src/`, `.planning/` та архітектурі застосунку.
 
-Доступні переклади: [English](../en/system-interactions/SYSTEM_INTERACTIONS.md) | [Polski](../pl/system-interactions/SYSTEM_INTERACTIONS.md) | [Русский](../ru/system-interactions/SYSTEM_INTERACTIONS.md) | [Українська](SYSTEM_INTERACTIONS.md)
+Доступні переклади: [English](../../en/system-interactions/SYSTEM_INTERACTIONS.md) | [Polski](../../pl/system-interactions/SYSTEM_INTERACTIONS.md) | [Русский](../../ru/system-interactions/SYSTEM_INTERACTIONS.md) | [Українська](SYSTEM_INTERACTIONS.md)
 
 ---
 

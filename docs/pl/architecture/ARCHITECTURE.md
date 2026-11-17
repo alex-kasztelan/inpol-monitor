@@ -2,7 +2,7 @@
 
 Ten dokument zawiera wizualne reprezentacje architektury systemu i interakcji między komponentami projektu Inpol Monitor. Diagramy używają składni Mermaid i renderują się w GitHub, GitLab, VS Code oraz w dowolnej przeglądarce kompatybilnej z Mermaid.
 
-Dostępne tłumaczenia: [English](../en/architecture/ARCHITECTURE.md) | [Polski](ARCHITECTURE.md) | [Русский](../ru/architecture/ARCHITECTURE.md) | [Українська](../ua/architecture/ARCHITECTURE.md)
+Dostępne tłumaczenia: [English](../../en/architecture/ARCHITECTURE.md) | [Polski](ARCHITECTURE.md) | [Русский](../../ru/architecture/ARCHITECTURE.md) | [Українська](../../ua/architecture/ARCHITECTURE.md)
 
 ---
 
