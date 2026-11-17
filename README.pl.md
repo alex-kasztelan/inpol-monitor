@@ -4,6 +4,12 @@ Zautomatyzowany system monitoringu polskiego portalu rządowego (inpol.mazowieck
 
 **Języki:** [English](README.md) | [Русский](README.ru.md) | [Українська](README.ua.md) | [Polski](README.pl.md)
 
+## Dokumentacja
+
+- **[Diagramy architektury](docs/pl/architecture/ARCHITECTURE.md)** — diagram komponentów, sekwencja cyklu sprawdzania, szczegóły wykrywania zmian, przepływ interfejsu webowego, przepływ danych, architektura wdrożenia, wzorce architektoniczne
+- **[Interakcje systemu](docs/pl/system-interactions/SYSTEM_INTERACTIONS.md)** — uwierzytelnianie, ekstrakcja danych, przechowywanie, wykrywanie zmian, powiadomienia, interfejs webowy, lokalizacja, obsługa błędów, konfiguracja, przepływy Harmonogramu zadań
+- **[Indeks dokumentacji](docs/README.md)** — cała dokumentacja w 4 językach (EN/PL/RU/UA)
+
 ## Przegląd
 
 Inpol Monitor śledzi sprawy imigracyjne na wielu kontach, aby wykrywać wszelkie zmiany statusów, dokumentów, pytań lub terminów — dzięki czemu użytkownik nigdy nie przegapi ważnej aktualizacji.
@@ -249,6 +255,8 @@ Pełny przewodnik konfiguracji, zarządzania i usuwania znajdziesz w [SCHEDULING
 4. **Warstwa wykrywania**: Strategy pattern dla 7 typów zmian, porównywanie na poziomie pól pytania
 5. **Warstwa powiadomień**: Batch-then-notify z Telegramem (obsługa wielu użytkowników) i zapasowym e-mailem
 6. **Warstwa webowa**: Aplikacja Flask z uwierzytelnianiem, filtrowaniem migawek, widokiem porównania
+
+> 📊 **Wizualna architektura**: Zobacz [Diagramy architektury](docs/pl/architecture/ARCHITECTURE.md) i [Interakcje systemu](docs/pl/system-interactions/SYSTEM_INTERACTIONS.md) dla pełnych diagramów komponentów i sekwencji.
 
 ### Kontrola jakości
 
