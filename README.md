@@ -40,7 +40,7 @@ Inpol Monitor tracks immigration cases across multiple accounts to detect any ch
 
 1. **Clone and setup**
    ```bash
-   git clone https://github.com/your-repo/inpol-monitor.git
+   git clone https://github.com/alex-kasztelan/inpol-monitor.git
    cd inpol-monitor
    python -m venv .venv
    .venv\Scripts\activate  # Windows

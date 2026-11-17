@@ -40,7 +40,7 @@ Inpol Monitor śledzi sprawy imigracyjne na wielu kontach, aby wykrywać wszelki
 
 1. **Klonowanie i konfiguracja**
    ```bash
-   git clone https://github.com/your-repo/inpol-monitor.git
+   git clone https://github.com/alex-kasztelan/inpol-monitor.git
    cd inpol-monitor
    python -m venv .venv
    .venv\Scripts\activate  # Windows
