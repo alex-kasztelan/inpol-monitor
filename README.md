@@ -4,6 +4,12 @@ Automated monitoring system for the Polish government portal (inpol.mazowieckie.
 
 **Languages:** [English](README.md) | [Русский](README.ru.md) | [Українська](README.ua.md) | [Polski](README.pl.md)
 
+## Documentation
+
+- **[Architecture Diagrams](docs/en/architecture/ARCHITECTURE.md)** — component diagram, check cycle sequence, change detection detail, web UI flow, data flow, deployment architecture, architectural patterns
+- **[System Interactions](docs/en/system-interactions/SYSTEM_INTERACTIONS.md)** — authentication, data extraction, storage, change detection, notifications, web UI, localization, error handling, configuration, Task Scheduler flows
+- **[Docs Index](docs/README.md)** — all documentation in 4 languages (EN/PL/RU/UA)
+
 ## Overview
 
 Inpol Monitor tracks immigration cases across multiple accounts to detect any changes to statuses, documents, questions, or deadlines — so the user never misses important updates.
@@ -34,7 +40,7 @@ Inpol Monitor tracks immigration cases across multiple accounts to detect any ch
 
 1. **Clone and setup**
    ```bash
-   git clone https://github.com/your-repo/inpol-monitor.git
+   git clone https://github.com/alex-kasztelan/inpol-monitor.git
    cd inpol-monitor
    python -m venv .venv
    .venv\Scripts\activate  # Windows
@@ -249,6 +255,8 @@ See [SCHEDULING.md](SCHEDULING.md) for the full setup, management, and removal g
 4. **Detection Layer**: Strategy pattern for 7 change types, field-level question comparison
 5. **Notification Layer**: Batch-then-notify with Telegram (multi-user support) and email fallback
 6. **Web Layer**: Flask web app with authentication, snapshot filtering, comparison view
+
+> 📊 **Visual architecture**: See [Architecture Diagrams](docs/en/architecture/ARCHITECTURE.md) and [System Interactions](docs/en/system-interactions/SYSTEM_INTERACTIONS.md) for full component and sequence diagrams.
 
 ### Quality Gates
 
